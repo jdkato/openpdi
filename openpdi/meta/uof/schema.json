@@ -14,7 +14,7 @@
         },
         {
             "label": "address", 
-            "format": "address",
+            "format": "upper",
             "description": "The street address of the incident."
         },
         {
