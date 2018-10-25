@@ -1,0 +1,8 @@
+__title__ = "OpenPDI"
+__description__ = "A library and command-line tool for working with data submitted to the Police Data Initiative."
+__url__ = "https://openpdi.com"
+__version__ = "0.1.0"
+__author__ = "Joseph Kato"
+__author_email__ = "joseph@jdkato.io"
+__license__ = "MIT"
+__copyright__ = "Copyright 2018 Joseph Kato"

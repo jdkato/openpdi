@@ -1,0 +1,78 @@
+{
+    "title": "Use of Force",
+    "license": "ODC_BY",
+    "fields": [
+        {
+            "label": "date", 
+            "format": "date",
+            "description": "The date of the stop in YYYY-MM-DD format."
+        },
+        {
+            "label": "time", 
+            "format": "time",
+            "description": "The 24-hour time of the stop, in HH:MM format."
+        },
+        {
+            "label": "address", 
+            "format": "address",
+            "description": "The street address of the incident."
+        },
+        {
+            "label": "state", 
+            "format": "raw",
+            "description": "The street address of the incident."
+        },
+        {
+            "label": "city",
+            "format": "raw"
+        },
+        {
+            "label": "latitude",
+            "format": "number"
+        },
+        {
+            "label": "longitude",
+            "format": "number"
+        },
+
+        {
+            "label": "ra",
+            "format": "number"
+        },
+        {
+            "label": "beat",
+            "format": "number"
+        },
+        {
+            "label": "sector",
+            "format": "number"
+        },
+        {
+            "label": "division",
+            "format": "upper"
+        },
+        {
+            "label": "district",
+            "format": "upper"
+        },
+
+        {"label": "service_type", "format": "lower"},
+        {"label": "force_type", "format": "lower"},
+        {"label": "reason", "format": "lower"},
+
+        {"label": "officer_sex", "format": "sex"},
+        {"label": "officer_race", "format": "race"},
+        {"label": "officer_injuries", "format": "lower"},
+        {"label": "hire_date", "format": "date"},
+        {"label": "officer_hospitalized", "format": "boolean"},
+
+        {"label": "subject_sex", "format": "sex"},
+        {"label": "subject_race", "format": "race"},
+        {"label": "subject_condition", "format": "lower"},
+        {"label": "subject_injuries", "format": "lower"},
+        {"label": "subject_hospitalized", "format": "boolean"},
+
+        {"label": "arrested", "format": "boolean"},
+        {"label": "charge", "format": "lower"}
+    ]
+}
