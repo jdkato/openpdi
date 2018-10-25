@@ -7,14 +7,9 @@ name = "pypi"
 tqdm = "*"
 click = "*"
 requests = "*"
-tablib = "*"
 pygogo = "*"
 pytest = "*"
-us = "*"
-pytz = "*"
-censusgeocode = "*"
-spacy = "*"
-reverse-geocoder = "*"
+openpyxl = "*"
 
 [dev-packages]
 

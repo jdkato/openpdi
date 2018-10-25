@@ -2,8 +2,6 @@
 """
 import datetime
 
-import pytz
-import us
 
 VALIDATORS = {}
 
@@ -37,20 +35,12 @@ def raw(row, index, raw):
 
 @VALIDATOR
 def time(row, index, state, specifier):
-    """Convert the given time to 24-hour (UTC), HH:MM:SS format.
-
-    TODO: tests
+    """
     """
     try:
         value = row[index]
-        zones = us.states.lookup(state).time_zones
-        naive = datetime.datetime.strptime(value, specifier)
-
-        tz = pytz.timezone(zones[0])
-        dt = tz.localize(naive, is_dst=None)
-        return dt.astimezone(pytz.utc).strftime("%H:%M:%S")
+        return datetime.datetime.strptime(value, specifier).time()
     except ValueError as e:
-        print(e)
         return None
 
 

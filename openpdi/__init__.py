@@ -4,14 +4,14 @@
 OpenPDI
 ~~~~~~~
 
-OpenPDI is a Python library and command-line tool for working with data
-submitted to the Police Data Initiative.
+OpenPDI is a Python library for working with data submitted to the Police Data
+Initiative.
 
 Usage:
     >>> import openpdi
     # Load the "uof" dataset, including only sources that an "officer_sex"
     # column.
-    >>> dataset = openpdi.load("uof", with_cols=["officer_sex"])
+    >>> openpdi.write('uof', with_cols=['officer_sex'])
 
 Full documentation is available at <https://openpdi.com/docs>.
 
@@ -19,67 +19,67 @@ Full documentation is available at <https://openpdi.com/docs>.
 :license: MIT, see LICENSE for more details.
 """
 import csv
+import io
 import json
+import logging
 import os
 import pathlib
 
-import pygogo as gogo
+import openpyxl
 import requests
-import tablib
 import tqdm
 
-from collections import OrderedDict
-from typing import Dict, List
-
+from itertools import islice
 from openpdi.validators import VALIDATORS
 
 FILE_PATH = os.path.dirname(os.path.realpath(__file__))
 DATA_PATH = pathlib.Path(os.path.join(FILE_PATH, "meta"))
 
 
-def _fetch(url: str) -> tablib.Dataset:
+def _fetch(url, f_type="csv"):
     """Fetch the provided resource, ``url``, and return a ``Dataset``.
 
-    ``url`` may link to data in XLSX, CSV, JSON, TSV, or ODS format.
+    ``url`` may link to data in XLSX, CSV, or TSV format.
     """
-    try:
-        r = requests.get(url, allow_redirects=True)
-        r.raise_for_status()
-        return tablib.Dataset().load(r.text)
-    except Exception as err:
-        # TODO: pygogo logging
-        print(err)
-    return None
+    iterator = iter([])
+
+    r = requests.get(url, allow_redirects=True)
+    if f_type == "csv":
+        csvfile = io.StringIO(r.text)
+        dialect = csv.Sniffer().sniff(csvfile.read(1024))
+        csvfile.seek(0)
+        iterator = csv.reader(csvfile, dialect)
+
+    for row in islice(iterator, 1, None):
+        yield row
 
 
-def _read_meta(path: str) -> Dict:
+def _read_meta(path):
     """
     """
     with open(path) as meta:
         return json.load(meta)
 
 
-def _merge(headers: str, data: List[Dict], formats: Dict[str, str]) -> tablib.Dataset:
+def _merge(f_obj, headers, sources, formats):
     """
     """
-    output = tablib.Dataset()
-    output.headers = headers
+    writer = csv.writer(f_obj, delimiter=",", quoting=csv.QUOTE_ALL)
 
-    for entry in data:
-        for row in entry["ds"]:
+    writer.writerow(headers)
+    for source in tqdm.tqdm(sources):
+        for row in _fetch(source["url"]):
             made = []
-            for header in output.headers:
-                if header in entry["columns"]:
-                    validator = VALIDATORS.get(formats[header])
-                    made.append(validator(row, **entry["columns"][header]))
+            for header in headers:
+                if header in source["columns"]:
+                    v = VALIDATORS.get(formats[header])
+                    made.append(v(row, **source["columns"][header]))
                 else:
                     made.append(None)
-            output.rpush(made)
-
-    return output
+            writer.writerow(made)
 
 
-def load(dataset: str, with_cols: List[str] = []) -> tablib.Dataset:
+def write(dataset, f_obj, with_cols=[], strict=False):
     """Load the given dataset.
 
     A "dataset" is a collection of data related to a particular topic -- e.g.,
@@ -89,16 +89,13 @@ def load(dataset: str, with_cols: List[str] = []) -> tablib.Dataset:
     Args:
         ``dataset``: The name of the dataset (e.g., "uof").
         ``with_cols``: A list specifying columns that must be included.
-
-    Returns:
-        An instace of ``tablib.Dataset`` containing the user-specified data
-        sources.
+        ``strict``: If true, only report columns specified in ``with_cols``.
 
     Examples:
         >>> import openpdi
         # Load the "uof" dataset, including only sources that an "officer_sex"
         # column.
-        >>> dataset = openpdi.load("uof", with_cols=["officer_sex"])
+        >>> openpdi.write("uof", with_cols=["officer_sex"])
     """
     schema = _read_meta(DATA_PATH.joinpath(dataset, "schema.json"))
 
@@ -106,14 +103,16 @@ def load(dataset: str, with_cols: List[str] = []) -> tablib.Dataset:
     for entry in schema["fields"]:
         formats[entry["label"]] = entry["format"]
 
-    columns, datasets = set(), []
+    columns, sources = set(), []
     for f in DATA_PATH.glob("**/meta.json"):
         for meta in _read_meta(f):
             sample_cols = meta["columns"]
             if not all(h in sample_cols for h in with_cols):
                 continue
-            datasets.append({"ds": _fetch(meta["url"]), "columns": sample_cols})
-            for k in sample_cols:
-                columns.add(k)
+            elif strict:
+                columns.update(with_cols)
+            else:
+                columns.update(sample_cols)
+            sources.append(meta)
 
-    return _merge(sorted(columns), datasets, formats)
+    return _merge(f_obj, sorted(columns), sources, formats)
