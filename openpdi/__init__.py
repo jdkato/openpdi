@@ -76,7 +76,7 @@ def _merge(f_obj, headers, sources, formats):
             writer.writerow(made)
 
 
-def write(dataset, f_obj, with_cols=[], strict=False):
+def write(dataset, f_obj, columns=[], strict=False, location=None):
     """Load the given dataset.
 
     A "dataset" is a collection of data related to a particular topic -- e.g.,
@@ -100,16 +100,18 @@ def write(dataset, f_obj, with_cols=[], strict=False):
     for entry in schema["fields"]:
         formats[entry["label"]] = entry["format"]
 
-    columns, sources = set(), []
+    headers, sources = set(), []
     for f in DATA_PATH.glob("**/meta.json"):
+        if location and location not in str(f.absolute()):
+            continue
         for meta in _read_meta(f):
             sample_cols = meta["columns"]
-            if not all(h in sample_cols for h in with_cols):
+            if not all(h in sample_cols for h in columns):
                 continue
             elif strict:
-                columns.update(with_cols)
+                headers.update(columns)
             else:
-                columns.update(sample_cols)
+                headers.update(sample_cols)
             sources.append(meta)
 
-    return _merge(f_obj, sorted(columns), sources, formats)
+    return _merge(f_obj, sorted(headers), sources, formats)
