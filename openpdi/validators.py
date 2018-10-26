@@ -1,6 +1,6 @@
 """OpenPDI - Cell Validators
 """
-import datetime
+from datetime import datetime
 
 
 VALIDATORS = {}
@@ -20,7 +20,7 @@ def date(row, index, specifier):
     """
     try:
         value = row[index].split(" ")[0]
-        return datetime.datetime.strptime(value, specifier).date()
+        return datetime.strptime(value, specifier).date()
     except ValueError as e:
         # TODO: Logging
         return None
@@ -34,12 +34,12 @@ def raw(row, index, raw):
 
 
 @VALIDATOR
-def time(row, index, state, specifier):
-    """
+def time(row, index, specifier):
+    """Convert the given time to 24-hour time in HH:MM format.
     """
     try:
         value = row[index]
-        return datetime.datetime.strptime(value, specifier).time()
+        return datetime.strptime(value, specifier).strftime("%H:%M")
     except ValueError as e:
         return None
 
@@ -48,10 +48,18 @@ def time(row, index, state, specifier):
 def race(row, index):
     """Determine the race given by the specified column.
 
-    TODO: Handle cases like "W" -> "White".
+    TODO: Do this better ...
     """
-    value = row[index]
-    return value.lower()
+    value = row[index].upper()
+    if len(value) > 2:
+        return value
+    elif value == "W":
+        return "WHITE"
+    elif value == "B":
+        return "BLACK"
+    elif value == "H":
+        return "HISPANIC"
+    return None
 
 
 @VALIDATOR
@@ -111,7 +119,7 @@ def sex(row, index):
     """
     value = row[index]
     if value.lower().startswith("m"):
-        return "male"
+        return "MALE"
     elif value.lower().startswith("f"):
-        return "female"
+        return "FEAMLE"
     return None

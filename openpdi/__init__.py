@@ -21,7 +21,6 @@ Full documentation is available at <https://openpdi.com/docs>.
 import csv
 import io
 import json
-import logging
 import os
 import pathlib
 
@@ -29,7 +28,6 @@ import openpyxl
 import requests
 import tqdm
 
-from itertools import islice
 from openpdi.validators import VALIDATORS
 
 FILE_PATH = os.path.dirname(os.path.realpath(__file__))
@@ -46,11 +44,10 @@ def _fetch(url, f_type="csv"):
     r = requests.get(url, allow_redirects=True)
     if f_type == "csv":
         csvfile = io.StringIO(r.text)
-        dialect = csv.Sniffer().sniff(csvfile.read(1024))
-        csvfile.seek(0)
+        dialect = csv.Sniffer().sniff(csvfile.readline())
         iterator = csv.reader(csvfile, dialect)
 
-    for row in islice(iterator, 1, None):
+    for row in iterator:
         yield row
 
 

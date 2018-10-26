@@ -1,0 +1,30 @@
+[
+    {
+        "url": "https://data.austintexas.gov/api/views/iydp-s2cf/rows.csv?accessType=DOWNLOAD",
+        "description": "R2R_2015",
+        "columns": {
+            "date": {"index": 2, "specifier": "%m/%d/%Y"},
+            "time": {"index": 3, "specifier": "%H%M"},
+
+            "address": {"index": 4},
+            "city": {"index": -1, "raw": "Austin"},
+            "state": {"index": -1, "raw": "TX"},
+
+            "district": {"index": 28},
+
+            "service_type": {"index": 6},
+            "force_type": {"index": 14},
+            "reason": {"index": 7},
+
+            "officer_injuries": {"index": 22},
+            "hire_date": {"index": 24, "specifier": "%m/%d/%Y"},
+            "experience": {"index": 25},
+
+            "subject_sex": {"index": 10},
+            "subject_race": {"index": 11},
+            "subject_condition": {"index": 13},
+            "resistance": {"index": 14},
+            "subject_injuries": {"index": 21}
+        }
+    }
+]

@@ -3,22 +3,22 @@
     "license": "ODC_BY",
     "fields": [
         {
-            "label": "date", 
+            "label": "date",
             "format": "date",
             "description": "The date of the stop in YYYY-MM-DD format."
         },
         {
-            "label": "time", 
+            "label": "time",
             "format": "time",
             "description": "The 24-hour time of the stop, in HH:MM format."
         },
         {
-            "label": "address", 
+            "label": "address",
             "format": "upper",
             "description": "The street address of the incident."
         },
         {
-            "label": "state", 
+            "label": "state",
             "format": "raw",
             "description": "The street address of the incident."
         },
@@ -64,6 +64,7 @@
         {"label": "officer_race", "format": "race"},
         {"label": "officer_injuries", "format": "lower"},
         {"label": "hire_date", "format": "date"},
+        {"label": "experience", "format": "number"},
         {"label": "officer_hospitalized", "format": "boolean"},
 
         {"label": "subject_sex", "format": "sex"},
@@ -71,6 +72,7 @@
         {"label": "subject_condition", "format": "lower"},
         {"label": "subject_injuries", "format": "lower"},
         {"label": "subject_hospitalized", "format": "boolean"},
+        {"label": "resistance", "format": "lower"},
 
         {"label": "arrested", "format": "boolean"},
         {"label": "charge", "format": "lower"}

@@ -4,7 +4,7 @@
         "description": "Police_Response_to_Resistance_-_2013",
         "columns": {
             "date": {"index": 4, "specifier": "%m/%d/%Y"},
-            "time": {"index": 5, "state": "TX", "specifier": "%H:%M"},
+            "time": {"index": 5, "specifier": "%H:%M"},
 
             "address": {"index": 3},
             "city": {"index": -1, "raw": "Dallas"},
@@ -28,7 +28,7 @@
             "officer_hospitalized": {"index": 12},
             "hire_date": {"index": 9, "specifier": "%m/%d/%Y"},
 
-            "subject_sex": {"index": 25}, 
+            "subject_sex": {"index": 25},
             "subject_race": {"index": 24},
             "subject_condition": {"index": 29},
             "arrested": {"index": 28},
@@ -41,7 +41,7 @@
         "description": "Police__2014_Response_to_Resistance",
         "columns": {
             "date": {"index": 2, "specifier": "%m/%d/%Y"},
-            "time": {"index": 3, "state": "TX", "specifier": "%H:%M"},
+            "time": {"index": 3, "specifier": "%H:%M"},
 
             "address": {"index": 25},
             "city": {"index": -1, "raw": "Dallas"},
@@ -63,7 +63,7 @@
             "officer_hospitalized": {"index": 10},
             "hire_date": {"index": 7, "specifier": "%m/%d/%Y"},
 
-            "subject_sex": {"index": 19}, 
+            "subject_sex": {"index": 19},
             "subject_race": {"index": 18},
             "subject_condition": {"index": 23},
             "arrested": {"index": 22},
@@ -76,7 +76,7 @@
         "description": "Police__2015_Response_to_Resistance",
         "columns": {
             "date": {"index": 2, "specifier": "%m/%d/%Y"},
-            "time": {"index": 3, "state": "TX", "specifier": "%H:%M"},
+            "time": {"index": 3, "specifier": "%H:%M"},
 
             "address": {"index": 25},
             "city": {"index": -1, "raw": "Dallas"},
@@ -98,7 +98,7 @@
             "officer_hospitalized": {"index": 10},
             "hire_date": {"index": 7, "specifier": "%m/%d/%Y"},
 
-            "subject_sex": {"index": 19}, 
+            "subject_sex": {"index": 19},
             "subject_race": {"index": 18},
             "subject_condition": {"index": 23},
             "arrested": {"index": 22},
@@ -111,7 +111,7 @@
         "description": "Police_Response_to_Resistance_-_2016",
         "columns": {
             "date": {"index": 4, "specifier": "%m/%d/%Y"},
-            "time": {"index": 5, "state": "TX", "specifier": "%I:%M:%S %p"},
+            "time": {"index": 5, "specifier": "%I:%M:%S %p"},
 
             "address": {"index": 3},
             "city": {"index": -1, "raw": "Dallas"},
@@ -133,7 +133,7 @@
             "officer_hospitalized": {"index": 12},
             "hire_date": {"index": 9, "specifier": "%m/%d/%Y"},
 
-            "subject_sex": {"index": 24}, 
+            "subject_sex": {"index": 24},
             "subject_race": {"index": 23},
             "subject_condition": {"index": 28},
             "arrested": {"index": 27},
