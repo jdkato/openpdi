@@ -7,8 +7,8 @@
             "time": {"index": 3, "specifier": "%H%M"},
 
             "address": {"index": 4},
-            "city": {"index": -1, "raw": "Austin"},
-            "state": {"index": -1, "raw": "TX"},
+            "city": {"raw": "Austin"},
+            "state": {"raw": "TX"},
 
             "district": {"index": 28},
 
@@ -23,7 +23,7 @@
             "subject_sex": {"index": 10},
             "subject_race": {"index": 11},
             "subject_condition": {"index": 13},
-            "resistance": {"index": 14},
+            "resistance_type": {"index": 14},
             "subject_injuries": {"index": 21}
         }
     }

@@ -10,6 +10,7 @@ requests = "*"
 pygogo = "*"
 pytest = "*"
 openpyxl = "*"
+spacy = "*"
 
 [dev-packages]
 

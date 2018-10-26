@@ -7,8 +7,8 @@
             "time": {"index": 5, "specifier": "%H:%M"},
 
             "address": {"index": 3},
-            "city": {"index": -1, "raw": "Dallas"},
-            "state": {"index": -1, "raw": "TX"},
+            "city": {"raw": "Dallas"},
+            "state": {"raw": "TX"},
             "latitude": {"index": 37},
             "longitude": {"index": 38},
 
@@ -44,8 +44,8 @@
             "time": {"index": 3, "specifier": "%H:%M"},
 
             "address": {"index": 25},
-            "city": {"index": -1, "raw": "Dallas"},
-            "state": {"index": -1, "raw": "TX"},
+            "city": {"raw": "Dallas"},
+            "state": {"raw": "TX"},
 
             "ra": {"index": 26},
             "beat": {"index": 27},
@@ -79,8 +79,8 @@
             "time": {"index": 3, "specifier": "%H:%M"},
 
             "address": {"index": 25},
-            "city": {"index": -1, "raw": "Dallas"},
-            "state": {"index": -1, "raw": "TX"},
+            "city": {"raw": "Dallas"},
+            "state": {"raw": "TX"},
 
             "ra": {"index": 26},
             "beat": {"index": 27},
@@ -114,8 +114,8 @@
             "time": {"index": 5, "specifier": "%I:%M:%S %p"},
 
             "address": {"index": 3},
-            "city": {"index": -1, "raw": "Dallas"},
-            "state": {"index": -1, "raw": "TX"},
+            "city": {"raw": "Dallas"},
+            "state": {"raw": "TX"},
 
             "ra": {"index": 30},
             "beat": {"index": 31},

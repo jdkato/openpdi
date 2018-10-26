@@ -59,21 +59,32 @@
         {"label": "service_type", "format": "lower"},
         {"label": "force_type", "format": "lower"},
         {"label": "reason", "format": "lower"},
+        {"label": "disposition", "format": "lower"},
+        {"label": "light_conditions", "format": "lower"},
+        {"label": "weather_conditions", "format": "lower"},
 
         {"label": "officer_sex", "format": "sex"},
         {"label": "officer_race", "format": "race"},
+        {"label": "officer_age", "format": "number"},
+        {"label": "officer_hash", "format": "lower"},
         {"label": "officer_injuries", "format": "lower"},
+        {"label": "officer_injured", "format": "boolean"},
+        {"label": "officer_hospitalized", "format": "boolean"},
+
         {"label": "hire_date", "format": "date"},
         {"label": "experience", "format": "number"},
-        {"label": "officer_hospitalized", "format": "boolean"},
 
         {"label": "subject_sex", "format": "sex"},
         {"label": "subject_race", "format": "race"},
         {"label": "subject_condition", "format": "lower"},
         {"label": "subject_injuries", "format": "lower"},
+        {"label": "subject_injured", "format": "boolean"},
         {"label": "subject_hospitalized", "format": "boolean"},
-        {"label": "resistance", "format": "lower"},
-
+        {"label": "subject_age", "format": "number"},
+        {"label": "subject_build", "format": "upper"},
+        {"label": "subject_height", "format": "lower"},
+        
+        {"label": "resistance_type", "format": "lower"},
         {"label": "arrested", "format": "boolean"},
         {"label": "charge", "format": "lower"}
     ]

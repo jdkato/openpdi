@@ -27,7 +27,7 @@ def date(row, index, specifier):
 
 
 @VALIDATOR
-def raw(row, index, raw):
+def raw(row, raw):
     """Return a pre-specified value instead of ``row[index]``.
     """
     return raw
@@ -79,10 +79,11 @@ def upper(row, index):
 @VALIDATOR
 def boolean(row, index):
     """Convert ``row[index]`` to a boolean value.
-
-    TODO: Handle more than "Y/y".
     """
-    return row[index].lower().startswith("y")
+    value = row[index].lower()
+    if value.startswith("y") or value.startswith("t"):
+        return True
+    return False
 
 
 @VALIDATOR
@@ -121,5 +122,5 @@ def sex(row, index):
     if value.lower().startswith("m"):
         return "MALE"
     elif value.lower().startswith("f"):
-        return "FEAMLE"
+        return "FEMALE"
     return None
