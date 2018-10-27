@@ -25,6 +25,9 @@ with open('uof.csv', 'w+') as csvfile:
     openpdi.write('uof', csvfile, with_cols=['longitude'])
 ```
 
-| Data set     | ID    | Source                                                      |
-|--------------|-------|-------------------------------------------------------------|
-| Use of Force | `uof` | [`PDI/use-of-force`](https://www.policedatainitiative.org/datasets/use-of-force/) |
+| Data set          | ID    | Source                  |
+|-------------------|-------|-------------------------|
+| [Use of Force][1] | `uof` | [`PDI/use-of-force`][2] |
+
+[1]: https://github.com/jdkato/OpenPDI/tree/master/openpdi/meta/uof
+[2]: https://www.policedatainitiative.org/datasets/use-of-force/
