@@ -3,13 +3,14 @@
         "url": "https://data.nola.gov/api/views/9mnw-mbde/rows.csv?accessType=DOWNLOAD",
         "description": "NOPD_Use_of_Force_Incidents",
         "type": "csv",
+        "start": 1,
         "columns": {
             "date": {"index": 1, "specifier": "%m/%d/%Y"},
 
             "city": {"raw": "New Orleans"},
             "state": {"raw": "LA"},
 
-            "division": {"index": 4}, 
+            "division": {"index": 4},
 
             "service_type": {"index": 10},
             "force_type": {"index": 13},
@@ -23,7 +24,7 @@
             "officer_age": {"index": 18},
             "officer_injured": {"index": 31},
 
-            "subject_sex": {"index": 21}, 
+            "subject_sex": {"index": 21},
             "subject_race": {"index": 22},
             "subject_hospitalized": {"index": 27},
             "subject_age": {"index": 23},

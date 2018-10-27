@@ -3,6 +3,7 @@
         "url": "https://www.dallasopendata.com/api/views/6gnu-avpf/rows.csv?accessType=DOWNLOAD",
         "description": "Police_Response_to_Resistance_-_2013",
         "type": "csv",
+        "start": 1,
         "columns": {
             "date": {"index": 4, "specifier": "%m/%d/%Y"},
             "time": {"index": 5, "specifier": "%H:%M"},
@@ -41,6 +42,7 @@
         "url": "https://www.dallasopendata.com/api/views/xiv3-e8g7/rows.csv?accessType=DOWNLOAD",
         "description": "Police__2014_Response_to_Resistance",
         "type": "csv",
+        "start": 1,
         "columns": {
             "date": {"index": 2, "specifier": "%m/%d/%Y"},
             "time": {"index": 3, "specifier": "%H:%M"},
@@ -77,6 +79,7 @@
         "url": "https://www.dallasopendata.com/api/views/594v-2cnd/rows.csv?accessType=DOWNLOAD",
         "description": "Police__2015_Response_to_Resistance",
         "type": "csv",
+        "start": 1,
         "columns": {
             "date": {"index": 2, "specifier": "%m/%d/%Y"},
             "time": {"index": 3, "specifier": "%H:%M"},
@@ -113,6 +116,7 @@
         "url": "https://www.dallasopendata.com/api/views/99fn-pvaf/rows.csv?accessType=DOWNLOAD",
         "description": "Police_Response_to_Resistance_-_2016",
         "type": "csv",
+        "start": 1,
         "columns": {
             "date": {"index": 4, "specifier": "%m/%d/%Y"},
             "time": {"index": 5, "specifier": "%I:%M:%S %p"},

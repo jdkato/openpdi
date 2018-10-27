@@ -16,23 +16,14 @@ class VALIDATOR(object):
 
 
 def _read_value(cell):
-    """
+    """Read the value from the given cell.
     """
     if type(cell) != str:
+        # We're dealing with a cell from other openpyxl or xlrd:
         if cell.value:
             return str(cell.value)
         return ""
     return cell
-
-
-def _is_float(value):
-    """
-    """
-    try:
-        float(value)
-        return True
-    except ValueError:
-        return False
 
 
 @VALIDATOR
@@ -59,7 +50,7 @@ def time(row, index, specifier):
     """
     try:
         value = _read_value(row[index])
-        if _is_float(value):
+        if "." in value:
             # We're probably dealing with an xlrd fraction:
             t = xlrd.xldate_as_tuple(float(value), 0)
             d = datetime.time(*t[3:])
@@ -67,7 +58,6 @@ def time(row, index, specifier):
             d = datetime.datetime.strptime(value, specifier)
         return d.strftime("%H:%M")
     except ValueError as e:
-        print(e)
         return None
 
 

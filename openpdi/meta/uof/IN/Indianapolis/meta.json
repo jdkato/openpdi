@@ -3,6 +3,7 @@
         "url": "https://www.projectcomport.org/department/1/uof.csv?",
         "description": "Indianapolis Metropolitan Police Department",
         "type": "csv",
+        "start": 1,
         "columns": {
             "date": {"index": 1, "specifier": "%m/%d/%Y"},
 
@@ -26,7 +27,7 @@
 
             "experience": {"index": 24},
 
-            "subject_sex": {"index": 19}, 
+            "subject_sex": {"index": 19},
             "subject_race": {"index": 18},
             "subject_hospitalized": {"index": 13},
             "subject_age": {"index": 20},
