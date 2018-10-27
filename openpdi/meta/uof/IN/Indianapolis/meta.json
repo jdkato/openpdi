@@ -2,11 +2,12 @@
     {
         "url": "https://www.projectcomport.org/department/1/uof.csv?",
         "description": "Indianapolis Metropolitan Police Department",
+        "type": "csv",
         "columns": {
             "date": {"index": 1, "specifier": "%m/%d/%Y"},
 
             "city": {"raw": "Indianapolis"},
-            "state": {"raw": "Indiana"},
+            "state": {"raw": "IN"},
 
             "division": {"index": 2},
             "district": {"index": 3},

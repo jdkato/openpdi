@@ -76,6 +76,7 @@
 
         {"label": "subject_sex", "format": "sex"},
         {"label": "subject_race", "format": "race"},
+        {"label": "subject_ethnicity", "format": "ethnicity"},
         {"label": "subject_condition", "format": "lower"},
         {"label": "subject_injuries", "format": "lower"},
         {"label": "subject_injured", "format": "boolean"},

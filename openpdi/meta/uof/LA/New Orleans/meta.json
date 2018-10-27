@@ -2,11 +2,12 @@
     {
         "url": "https://data.nola.gov/api/views/9mnw-mbde/rows.csv?accessType=DOWNLOAD",
         "description": "NOPD_Use_of_Force_Incidents",
+        "type": "csv",
         "columns": {
             "date": {"index": 1, "specifier": "%m/%d/%Y"},
 
-            "city": {"raw": "Louisiana"},
-            "state": {"raw": "New Orleans"},
+            "city": {"raw": "New Orleans"},
+            "state": {"raw": "LA"},
 
             "division": {"index": 4}, 
 

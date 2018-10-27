@@ -1,6 +1,7 @@
 """OpenPDI - Cell Validators
 """
-from datetime import datetime
+import datetime 
+import xlrd
 
 
 VALIDATORS = {}
@@ -14,15 +15,32 @@ class VALIDATOR(object):
         VALIDATORS[f.__name__] = f
 
 
+def _read_value(cell):
+    """
+    """
+    if type(cell) != str:
+        if cell.value:
+            return str(cell.value)
+        return ""
+    return cell
+
+def _is_float(value):
+    """
+    """
+    try:
+        float(value)
+        return True
+    except ValueError:
+        return False
+
 @VALIDATOR
 def date(row, index, specifier):
     """Convert the given date to YYYY-MM-DD format.
     """
+    value = _read_value(row[index]).split(" ")[0]
     try:
-        value = row[index].split(" ")[0]
-        return datetime.strptime(value, specifier).date()
+        return datetime.datetime.strptime(value, specifier).date()
     except ValueError as e:
-        # TODO: Logging
         return None
 
 
@@ -38,10 +56,27 @@ def time(row, index, specifier):
     """Convert the given time to 24-hour time in HH:MM format.
     """
     try:
-        value = row[index]
-        return datetime.strptime(value, specifier).strftime("%H:%M")
+        value = _read_value(row[index])
+        if _is_float(value):
+            # We're probably dealing with an xlrd fraction:
+            t = xlrd.xldate_as_tuple(float(value), 0)
+            d = datetime.time(*t[3:])
+        else:
+            d = datetime.datetime.strptime(value, specifier)
+        return d.strftime("%H:%M")
     except ValueError as e:
+        print(e)
         return None
+
+
+@VALIDATOR
+def ethnicity(row, index):
+    """
+    """
+    value = _read_value(row[index]).lower().strip('.')
+    if value in ("nh", "non-hisp", "non - hisp"):
+        return "NON-HISPANIC"
+    return "HISPANIC"
 
 
 @VALIDATOR
@@ -50,7 +85,7 @@ def race(row, index):
 
     TODO: Do this better ...
     """
-    value = row[index].upper()
+    value = _read_value(row[index]).upper()
     if len(value) > 2:
         return value
     elif value == "W":
@@ -66,21 +101,21 @@ def race(row, index):
 def lower(row, index):
     """Convert ``value`` to lower case.
     """
-    return row[index].lower().strip()
+    return _read_value(row[index]).lower().strip()
 
 
 @VALIDATOR
 def upper(row, index):
     """Convert ``row[index]`` to upper case.
     """
-    return row[index].upper().strip()
+    return _read_value(row[index]).upper().strip()
 
 
 @VALIDATOR
 def boolean(row, index):
     """Convert ``row[index]`` to a boolean value.
     """
-    value = row[index].lower()
+    value = _read_value(row[index]).lower()
     if value.startswith("y") or value.startswith("t"):
         return True
     return False
@@ -90,7 +125,7 @@ def boolean(row, index):
 def number(row, index):
     """Convert ``row[index]`` to a numerical value.
     """
-    value = row[index]
+    value = _read_value(row[index])
     if not any(s.isdigit() for s in value):
         return value
     elif value.isdigit():
@@ -104,23 +139,23 @@ def condition(row, index):
 
     TODO: spaCy-powered labels -- e.g., "DRUG"
     """
-    return row[index].lower()
+    return _read_value(row[index]).lower()
 
 
 @VALIDATOR
 def capitalize(row, index):
     """Return a capitalized version of ``row[index]``.
     """
-    return row[index].capitalize()
+    return _read_value(row[index]).capitalize()
 
 
 @VALIDATOR
 def sex(row, index):
     """Determine the sex given by the specified column.
     """
-    value = row[index]
-    if value.lower().startswith("m"):
+    value = _read_value(row[index]).lower()
+    if value.startswith("m"):
         return "MALE"
-    elif value.lower().startswith("f"):
+    elif value.startswith("f"):
         return "FEMALE"
     return None

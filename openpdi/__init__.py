@@ -27,6 +27,7 @@ import pathlib
 import openpyxl
 import requests
 import tqdm
+import xlrd
 
 from openpdi.validators import VALIDATORS
 
@@ -34,18 +35,48 @@ FILE_PATH = os.path.dirname(os.path.realpath(__file__))
 DATA_PATH = pathlib.Path(os.path.join(FILE_PATH, "meta"))
 
 
-def _fetch(url, f_type="csv"):
+def _read_csv(text, start):
+    """
+    """ 
+    csvfile = io.StringIO(text)
+    dialect = csv.Sniffer().sniff(csvfile.readline())
+    return csv.reader(csvfile, dialect)
+
+
+def _read_xlsx(text, start):
+    """
+    """ 
+    wb = openpyxl.load_workbook(filename=io.BytesIO(text), read_only=True)
+    return wb.worksheets[0].iter_rows(min_row=start)
+
+
+def _read_xlrd(text, start):
+    """
+    """ 
+    wb = xlrd.open_workbook(file_contents=text)
+
+    rows = wb.sheet_by_index(0).get_rows()
+    for _ in range(start):
+        next(rows)
+
+    return rows
+
+
+def _fetch(meta):
     """Fetch the provided resource, ``url``, and return a ``Dataset``.
 
     ``url`` may link to data in XLSX, CSV, or TSV format.
     """
+    r = requests.get(meta["url"], allow_redirects=True)
     iterator = iter([])
 
-    r = requests.get(url, allow_redirects=True)
+    f_type = meta["type"]
     if f_type == "csv":
-        csvfile = io.StringIO(r.text)
-        dialect = csv.Sniffer().sniff(csvfile.readline())
-        iterator = csv.reader(csvfile, dialect)
+        iterator = _read_csv(r.text, meta.get("start"))
+    elif f_type == "xlsx":
+        iterator = _read_xlsx(r.content, meta.get("start"))
+    elif f_type == "xlrd":
+        iterator = _read_xlrd(r.content, meta.get("start"))
 
     for row in iterator:
         yield row
@@ -65,7 +96,7 @@ def _merge(f_obj, headers, sources, formats):
 
     writer.writerow(headers)
     for source in tqdm.tqdm(sources):
-        for row in _fetch(source["url"]):
+        for row in _fetch(source):
             made = []
             for header in headers:
                 if header in source["columns"]:

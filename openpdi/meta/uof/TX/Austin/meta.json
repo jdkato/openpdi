@@ -2,6 +2,7 @@
     {
         "url": "https://data.austintexas.gov/api/views/iydp-s2cf/rows.csv?accessType=DOWNLOAD",
         "description": "R2R_2015",
+        "type": "csv",
         "columns": {
             "date": {"index": 2, "specifier": "%m/%d/%Y"},
             "time": {"index": 3, "specifier": "%H%M"},
