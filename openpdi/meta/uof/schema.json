@@ -2,59 +2,21 @@
     "title": "Use of Force",
     "license": "ODC_BY",
     "fields": [
-        {
-            "label": "date",
-            "format": "date",
-            "description": "The date of the stop in YYYY-MM-DD format."
-        },
-        {
-            "label": "time",
-            "format": "time",
-            "description": "The 24-hour time of the stop, in HH:MM format."
-        },
-        {
-            "label": "address",
-            "format": "upper",
-            "description": "The street address of the incident."
-        },
-        {
-            "label": "state",
-            "format": "raw",
-            "description": "The street address of the incident."
-        },
-        {
-            "label": "city",
-            "format": "raw"
-        },
-        {
-            "label": "latitude",
-            "format": "number"
-        },
-        {
-            "label": "longitude",
-            "format": "number"
-        },
+        {"label": "date", "format": "date"},
+        {"label": "time", "format": "time"},
 
-        {
-            "label": "ra",
-            "format": "number"
-        },
-        {
-            "label": "beat",
-            "format": "number"
-        },
-        {
-            "label": "sector",
-            "format": "number"
-        },
-        {
-            "label": "division",
-            "format": "upper"
-        },
-        {
-            "label": "district",
-            "format": "upper"
-        },
+        {"label": "address", "format": "upper"},
+        {"label": "state", "format": "raw"},
+        {"label": "city", "format": "raw"},
+
+        {"label": "latitude", "format": "number"},
+        {"label": "longitude", "format": "number"},
+
+        {"label": "ra", "format": "number"},
+        {"label": "beat", "format": "number"},
+        {"label": "sector", "format": "number"},
+        {"label": "division", "format": "upper"},
+        {"label": "district", "format": "upper"},
 
         {"label": "service_type", "format": "lower"},
         {"label": "force_type", "format": "lower"},
@@ -84,7 +46,7 @@
         {"label": "subject_age", "format": "number"},
         {"label": "subject_build", "format": "upper"},
         {"label": "subject_height", "format": "lower"},
-        
+
         {"label": "resistance_type", "format": "lower"},
         {"label": "arrested", "format": "boolean"},
         {"label": "charge", "format": "lower"}
