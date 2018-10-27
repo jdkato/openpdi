@@ -18,18 +18,18 @@
         {"label": "division", "format": "upper"},
         {"label": "district", "format": "upper"},
 
-        {"label": "service_type", "format": "lower"},
-        {"label": "force_type", "format": "lower"},
-        {"label": "reason", "format": "lower"},
-        {"label": "disposition", "format": "lower"},
-        {"label": "light_conditions", "format": "lower"},
-        {"label": "weather_conditions", "format": "lower"},
+        {"label": "service_type", "format": "upper"},
+        {"label": "force_type", "format": "upper"},
+        {"label": "reason", "format": "upper"},
+        {"label": "disposition", "format": "upper"},
+        {"label": "light_conditions", "format": "upper"},
+        {"label": "weather_conditions", "format": "upper"},
 
         {"label": "officer_sex", "format": "sex"},
         {"label": "officer_race", "format": "race"},
         {"label": "officer_age", "format": "number"},
-        {"label": "officer_hash", "format": "lower"},
-        {"label": "officer_injuries", "format": "lower"},
+        {"label": "officer_hash", "format": "upper"},
+        {"label": "officer_injuries", "format": "upper"},
         {"label": "officer_injured", "format": "boolean"},
         {"label": "officer_hospitalized", "format": "boolean"},
 
@@ -39,16 +39,16 @@
         {"label": "subject_sex", "format": "sex"},
         {"label": "subject_race", "format": "race"},
         {"label": "subject_ethnicity", "format": "ethnicity"},
-        {"label": "subject_condition", "format": "lower"},
-        {"label": "subject_injuries", "format": "lower"},
+        {"label": "subject_condition", "format": "upper"},
+        {"label": "subject_injuries", "format": "upper"},
         {"label": "subject_injured", "format": "boolean"},
         {"label": "subject_hospitalized", "format": "boolean"},
         {"label": "subject_age", "format": "number"},
         {"label": "subject_build", "format": "upper"},
-        {"label": "subject_height", "format": "lower"},
+        {"label": "subject_height", "format": "upper"},
 
-        {"label": "resistance_type", "format": "lower"},
+        {"label": "resistance_type", "format": "upper"},
         {"label": "arrested", "format": "boolean"},
-        {"label": "charge", "format": "lower"}
+        {"label": "charge", "format": "upper"}
     ]
 }
