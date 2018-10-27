@@ -37,7 +37,7 @@ DATA_PATH = pathlib.Path(os.path.join(FILE_PATH, "meta"))
 
 def _read_csv(text, start):
     """
-    """ 
+    """
     csvfile = io.StringIO(text)
     dialect = csv.Sniffer().sniff(csvfile.readline())
     return csv.reader(csvfile, dialect)
@@ -45,14 +45,14 @@ def _read_csv(text, start):
 
 def _read_xlsx(text, start):
     """
-    """ 
+    """
     wb = openpyxl.load_workbook(filename=io.BytesIO(text), read_only=True)
     return wb.worksheets[0].iter_rows(min_row=start)
 
 
 def _read_xlrd(text, start):
     """
-    """ 
+    """
     wb = xlrd.open_workbook(file_contents=text)
 
     rows = wb.sheet_by_index(0).get_rows()

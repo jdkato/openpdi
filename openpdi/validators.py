@@ -1,6 +1,6 @@
 """OpenPDI - Cell Validators
 """
-import datetime 
+import datetime
 import xlrd
 
 
@@ -24,6 +24,7 @@ def _read_value(cell):
         return ""
     return cell
 
+
 def _is_float(value):
     """
     """
@@ -32,6 +33,7 @@ def _is_float(value):
         return True
     except ValueError:
         return False
+
 
 @VALIDATOR
 def date(row, index, specifier):
@@ -73,7 +75,7 @@ def time(row, index, specifier):
 def ethnicity(row, index):
     """
     """
-    value = _read_value(row[index]).lower().strip('.')
+    value = _read_value(row[index]).lower().strip(".")
     if value in ("nh", "non-hisp", "non - hisp"):
         return "NON-HISPANIC"
     return "HISPANIC"
