@@ -35,7 +35,6 @@ import pathlib
 
 import openpyxl
 import requests
-import tqdm
 import xlrd
 
 from openpdi.validators import VALIDATORS
@@ -44,21 +43,16 @@ FILE_PATH = os.path.dirname(os.path.realpath(__file__))
 DATA_PATH = pathlib.Path(os.path.join(FILE_PATH, "meta"))
 
 
-def write(topic, f_obj, columns=[], strict=False, location=None):
+def fetch(topic, columns=[], strict=False, location=None):
     """Create a data set from the given constraints.
 
     Args:
         topic: The name of the particular data set (e.g., "uof").
-
-        f_obj: a file-like object to write the data set to.
-
         columns: A list specifying columns that must be included. For example,
                  our analysis might require that the ``officer_race`` column is
                  included in any data source we consider.
-
         strict: If true, only columns specified in ``columns`` will be reported
                 in the final data set.
-
         location: A string (in the form "state/city") specifying a certain
                   location to limit results to -- e.g., "TX/Dallas".
     """
@@ -82,7 +76,7 @@ def write(topic, f_obj, columns=[], strict=False, location=None):
                 headers.update(sample_cols)
             sources.append(meta)
 
-    return _merge(f_obj, sorted(headers), sources, formats)
+    yield from _merge(sorted(headers), sources, formats)
 
 
 def _read_csv(text, start):
@@ -144,13 +138,11 @@ def _read_meta(path):
         return json.load(meta)
 
 
-def _merge(f_obj, headers, sources, formats):
+def _merge(headers, sources, formats):
     """Merge multiple data sources into a single CSV file (``f_obj``).
     """
-    writer = csv.writer(f_obj, delimiter=",", quoting=csv.QUOTE_ALL)
-
-    writer.writerow(headers)
-    for source in tqdm.tqdm(sources):
+    yield headers
+    for source in sources:
         for row in _fetch(source):
             made = []
             for header in headers:
@@ -159,4 +151,4 @@ def _merge(f_obj, headers, sources, formats):
                     made.append(v(row, **source["columns"][header]))
                 else:
                     made.append(None)
-            writer.writerow(made)
+            yield made

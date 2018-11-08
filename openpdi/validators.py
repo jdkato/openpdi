@@ -33,7 +33,6 @@ def date(row, index, specifier):
     value = _read_value(row[index]).split(" ")[0]
     try:
         d = datetime.datetime.strptime(value, specifier)
-        print(d, d.strftime("%Y-%m-%d"))
         return d.strftime("%Y-%m-%d")
     except ValueError as e:
         return None

@@ -19,10 +19,12 @@ standardization&mdash;namely,
 ## Getting Started
 
 ```python
+import csv
 import openpdi
 
-with open('uof.csv', 'w+') as csvfile:
-    openpdi.write('uof', csvfile, with_cols=['longitude'])
+with open('uof.csv', 'w+') as f:
+    writer = csv.writer(f, delimiter=",", quoting=csv.QUOTE_ALL)
+    writer.writerows(openpdi.fetch('uof', columns=['longitude']))
 ```
 
 | Data set          | ID    | Source                  |
