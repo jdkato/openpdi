@@ -1,0 +1,38 @@
+[
+    {
+        "url": "https://data.cincinnati-oh.gov/api/views/8us8-wi2w/rows.csv?accessType=DOWNLOAD",
+        "description": "PDI__Police_Data_Initiative__Use_of_Force",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 1,
+                "specifier": "%m/%d/%Y"
+            },
+            "city": {
+                "raw": "Cincinnati"
+            },
+            "state": {
+                "raw": "OH"
+            },
+            "district": {
+                "index": 4
+            },
+            "force_type": {
+                "index": 6
+            },
+            "officer_sex": {
+                "index": 12
+            },
+            "officer_race": {
+                "index": 13
+            },
+            "subject_sex": {
+                "index": 10
+            },
+            "subject_race": {
+                "index": 11
+            }
+        }
+    }
+]

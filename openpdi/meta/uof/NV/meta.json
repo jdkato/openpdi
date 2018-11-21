@@ -1,0 +1,146 @@
+[
+    {
+        "url": "http://www.las-cruces.org/~/media/lcpublicwebdev2/site%20documents/article%20documents/police/web%202016%20uof%20statistics%201.ashx?la=en",
+        "type": "xlsx",
+        "start": 1,
+        "columns": {
+            "year": {
+                "raw": "2016"
+            },
+            "city": {
+                "raw": "Las Cruces"
+            },
+            "state": {
+                "raw": "NV"
+            },
+            "case_number": {
+                "index": 0
+            },
+            "reason": {
+                "index": 3
+            },
+            "officer_injured": {
+                "index": 6
+            },
+            "officer_hospitalized": {
+                "index": 7
+            },
+            "subject_injured": {
+                "index": 6
+            },
+            "subject_hospitalized": {
+                "index": 8
+            }
+        }
+    },
+    {
+        "url": "http://cityofhenderson.com/docs/default-source/police-docs/police-data-initiative/2015-hpd-uof-incidents---webpage-posting.xlsx?sfvrsn=2",
+        "type": "xlsx",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 3,
+                "specifier": "%m/%d/%Y"
+            },
+            "city": {
+                "raw": "Henderson"
+            },
+            "state": {
+                "raw": "NV"
+            },
+            "case_number": {
+                "index": 7
+            },
+            "reason": {
+                "index": 8
+            },
+            "officer_sex": {
+                "index": 11
+            },
+            "officer_race": {
+                "index": 10
+            },
+            "officer_age": {
+                "index": 9
+            },
+            "officer_injured": {
+                "index": 13
+            },
+            "hire_date": {
+                "index": 12,
+                "specifier": "%m/%d/%Y"
+            },
+            "subject_sex": {
+                "index": 2
+            },
+            "subject_race": {
+                "index": 0
+            },
+            "subject_injured": {
+                "index": 14
+            },
+            "subject_dob": {
+                "index": 1,
+                "specifier": "%m/%d/%Y"
+            },
+            "arrested": {
+                "index": 4
+            }
+        }
+    },
+    {
+        "url": "http://cityofhenderson.com/docs/default-source/police-docs/police-data-initiative/2016-hpd-uof-incidents.csv?sfvrsn=2",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 3,
+                "specifier": "%m/%d/%Y"
+            },
+            "city": {
+                "raw": "Henderson"
+            },
+            "state": {
+                "raw": "NV"
+            },
+            "case_number": {
+                "index": 7
+            },
+            "reason": {
+                "index": 8
+            },
+            "officer_sex": {
+                "index": 11
+            },
+            "officer_race": {
+                "index": 10
+            },
+            "officer_age": {
+                "index": 9
+            },
+            "officer_injured": {
+                "index": 13
+            },
+            "hire_date": {
+                "index": 12,
+                "specifier": "%m/%d/%Y"
+            },
+            "subject_sex": {
+                "index": 2
+            },
+            "subject_race": {
+                "index": 0
+            },
+            "subject_injured": {
+                "index": 14
+            },
+            "subject_dob": {
+                "index": 1,
+                "specifier": "%m/%d/%Y"
+            },
+            "arrested": {
+                "index": 4
+            }
+        }
+    }
+]

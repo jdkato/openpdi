@@ -1,0 +1,49 @@
+[
+    {
+        "url": "https://www.norwichct.org/Archive.aspx?AMID=61&Type=Recent",
+        "type": "xlrd",
+        "start": 1,
+        "columns": {
+            "time": {
+                "index": 2,
+                "specifier": "%m/%d/%Y"
+            },
+            "city": {
+                "raw": "Norwich"
+            },
+            "state": {
+                "raw": "CT"
+            },
+            "service_type": {
+                "index": 1
+            },
+            "force_type": {
+                "index": 9
+            },
+            "reason": {
+                "index": 6
+            },
+            "officer_injuries": {
+                "index": 13
+            },
+            "subject_sex": {
+                "index": 5
+            },
+            "subject_age": {
+                "index": 4
+            },
+            "subject_race": {
+                "index": 6
+            },
+            "subject_subject_injuries": {
+                "index": 12
+            },
+            "aggravating_factors": {
+                "index": 8
+            },
+            "arrested": {
+                "index": 11
+            }
+        }
+    }
+]

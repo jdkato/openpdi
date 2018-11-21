@@ -1,0 +1,49 @@
+[
+    {
+        "url": "https://www.norwichct.org/Archive.aspx?AMID=61&Type=Recent",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 0,
+                "specifier": "%m/%d/%Y"
+            },
+            "city": {
+                "raw": "Richmond"
+            },
+            "state": {
+                "raw": "CA"
+            },
+            "service_type": {
+                "index": 1
+            },
+            "force_type": {
+                "index": 10
+            },
+            "light_conditions": {
+                "index": 8
+            },
+            "weather_conditions": {
+                "index": 7
+            },
+            "reason": {
+                "index": 2
+            },
+            "officer_injured": {
+                "index": 6
+            },
+            "officer_race": {
+                "index": 9
+            },
+            "subject_injured": {
+                "index": 5
+            },
+            "aggravating_factors": {
+                "index": 3
+            },
+            "arrested": {
+                "index": 4
+            }
+        }
+    }
+]

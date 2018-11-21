@@ -1,0 +1,37 @@
+[
+    {
+        "url": "http://www.norristown.org/template/upload_files/2016_Use_of_Force_Data.xlsx",
+        "type": "xlsx",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 0,
+                "specifier": "%m/%d/%Y"
+            },
+            "charge": {
+                "index": 4
+            },
+            "force_type": {
+                "index": 10
+            },
+            "city": {
+                "raw": "Norristown"
+            },
+            "state": {
+                "raw": "PA"
+            },
+            "subject_injured": {
+                "index": 6
+            },
+            "subject_sex": {
+                "index": 7
+            },
+            "subject_race": {
+                "index": 8
+            },
+            "subject_age": {
+                "index": 11
+            }
+        }
+    }
+]

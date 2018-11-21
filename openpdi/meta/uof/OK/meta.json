@@ -1,0 +1,485 @@
+[
+    {
+        "url": "http://normanpd.normanok.gov/sites/default/files/PD/images/Use%20of%20Force%20by%20Incident%20Officer%20and%20Citizen.csv",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 1,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 2,
+                "specifier": "%H:%M:%S %p"
+            },
+            "city": {
+                "raw": "Norman"
+            },
+            "state": {
+                "raw": "OK"
+            },
+            "service_type": {
+                "index": 4
+            },
+            "reason": {
+                "index": 5
+            },
+            "force_type": {
+                "index": 6
+            },
+            "officer_id": {
+                "index": 7
+            },
+            "officer_hospitalized": {
+                "index": 9
+            },
+            "experience": {
+                "index": 10
+            },
+            "officer_age": {
+                "index": 11
+            },
+            "officer_race": {
+                "index": 12
+            },
+            "officer_sex": {
+                "index": 13
+            },
+            "disposition": {
+                "index": 14
+            },
+            "aggravating_factors": {
+                "index": 15
+            },
+            "subject_injured": {
+                "index": 17
+            },
+            "subject_hospitalized": {
+                "index": 18
+            },
+            "subject_race": {
+                "index": 19
+            },
+            "subject_sex": {
+                "index": 20
+            },
+            "arrested": {
+                "index": 16
+            }
+        }
+    },
+    {
+        "url": "http://normanpd.normanok.gov/sites/default/files/PD/images/2017Q1%20Use%20of%20Force%20by%20Citizen-Officer_0.csv",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 1,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 2,
+                "specifier": "%H:%M:%S"
+            },
+            "city": {
+                "raw": "Norman"
+            },
+            "state": {
+                "raw": "OK"
+            },
+            "service_type": {
+                "index": 4
+            },
+            "reason": {
+                "index": 5
+            },
+            "force_type": {
+                "index": 6
+            },
+            "officer_id": {
+                "index": 7
+            },
+            "officer_hospitalized": {
+                "index": 9
+            },
+            "experience": {
+                "index": 10
+            },
+            "officer_age": {
+                "index": 11
+            },
+            "officer_race": {
+                "index": 12
+            },
+            "officer_sex": {
+                "index": 13
+            },
+            "disposition": {
+                "index": 14
+            },
+            "aggravating_factors": {
+                "index": 15
+            },
+            "subject_injured": {
+                "index": 17
+            },
+            "subject_hospitalized": {
+                "index": 18
+            },
+            "subject_race": {
+                "index": 19
+            },
+            "subject_sex": {
+                "index": 20
+            },
+            "arrested": {
+                "index": 16
+            }
+        }
+    },
+    {
+        "url": "http://normanpd.normanok.gov/sites/default/files/PD/images/2017Q2%20Use%20of%20Force%20by%20Citizen-Officer.csv",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 1,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 2,
+                "specifier": "%H:%M:%S"
+            },
+            "city": {
+                "raw": "Norman"
+            },
+            "state": {
+                "raw": "OK"
+            },
+            "service_type": {
+                "index": 4
+            },
+            "reason": {
+                "index": 5
+            },
+            "force_type": {
+                "index": 6
+            },
+            "officer_id": {
+                "index": 7
+            },
+            "officer_hospitalized": {
+                "index": 9
+            },
+            "experience": {
+                "index": 10
+            },
+            "officer_age": {
+                "index": 11
+            },
+            "officer_race": {
+                "index": 12
+            },
+            "officer_sex": {
+                "index": 13
+            },
+            "disposition": {
+                "index": 14
+            },
+            "aggravating_factors": {
+                "index": 15
+            },
+            "subject_injured": {
+                "index": 17
+            },
+            "subject_hospitalized": {
+                "index": 18
+            },
+            "subject_race": {
+                "index": 19
+            },
+            "subject_sex": {
+                "index": 20
+            },
+            "arrested": {
+                "index": 16
+            }
+        }
+    },
+    {
+        "url": "http://normanpd.normanok.gov/sites/default/files/PD/images/2017Q3%20Use%20of%20Force%20by%20Citizen-Officer.csv",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 1,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 2,
+                "specifier": "%H:%M:%S"
+            },
+            "city": {
+                "raw": "Norman"
+            },
+            "state": {
+                "raw": "OK"
+            },
+            "service_type": {
+                "index": 4
+            },
+            "reason": {
+                "index": 5
+            },
+            "force_type": {
+                "index": 6
+            },
+            "officer_id": {
+                "index": 7
+            },
+            "officer_hospitalized": {
+                "index": 9
+            },
+            "experience": {
+                "index": 10
+            },
+            "officer_age": {
+                "index": 11
+            },
+            "officer_race": {
+                "index": 12
+            },
+            "officer_sex": {
+                "index": 13
+            },
+            "disposition": {
+                "index": 14
+            },
+            "aggravating_factors": {
+                "index": 15
+            },
+            "subject_injured": {
+                "index": 17
+            },
+            "subject_hospitalized": {
+                "index": 18
+            },
+            "subject_race": {
+                "index": 19
+            },
+            "subject_sex": {
+                "index": 20
+            },
+            "arrested": {
+                "index": 16
+            }
+        }
+    },
+    {
+        "url": "http://normanpd.normanok.gov/sites/default/files/PD/images/2017Q4%20Use%20of%20Force%20by%20Citizen-Officer.csv",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 1,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 2,
+                "specifier": "%H:%M:%S"
+            },
+            "city": {
+                "raw": "Norman"
+            },
+            "state": {
+                "raw": "OK"
+            },
+            "service_type": {
+                "index": 4
+            },
+            "reason": {
+                "index": 5
+            },
+            "force_type": {
+                "index": 6
+            },
+            "officer_id": {
+                "index": 7
+            },
+            "officer_hospitalized": {
+                "index": 9
+            },
+            "experience": {
+                "index": 10
+            },
+            "officer_age": {
+                "index": 11
+            },
+            "officer_race": {
+                "index": 12
+            },
+            "officer_sex": {
+                "index": 13
+            },
+            "disposition": {
+                "index": 14
+            },
+            "aggravating_factors": {
+                "index": 15
+            },
+            "subject_injured": {
+                "index": 17
+            },
+            "subject_hospitalized": {
+                "index": 18
+            },
+            "subject_race": {
+                "index": 19
+            },
+            "subject_sex": {
+                "index": 20
+            },
+            "arrested": {
+                "index": 16
+            }
+        }
+    },
+    {
+        "url": "http://normanpd.normanok.gov/sites/default/files/PD/images/2018Q1%20Use%20of%20Force%20by%20Citizen-Officer.csv",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 1,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 2,
+                "specifier": "%H:%M:%S"
+            },
+            "city": {
+                "raw": "Norman"
+            },
+            "state": {
+                "raw": "OK"
+            },
+            "service_type": {
+                "index": 4
+            },
+            "reason": {
+                "index": 5
+            },
+            "force_type": {
+                "index": 6
+            },
+            "officer_id": {
+                "index": 7
+            },
+            "officer_hospitalized": {
+                "index": 9
+            },
+            "experience": {
+                "index": 10
+            },
+            "officer_age": {
+                "index": 11
+            },
+            "officer_race": {
+                "index": 12
+            },
+            "officer_sex": {
+                "index": 13
+            },
+            "disposition": {
+                "index": 14
+            },
+            "aggravating_factors": {
+                "index": 15
+            },
+            "subject_injured": {
+                "index": 17
+            },
+            "subject_hospitalized": {
+                "index": 18
+            },
+            "subject_race": {
+                "index": 19
+            },
+            "subject_sex": {
+                "index": 20
+            },
+            "arrested": {
+                "index": 16
+            }
+        }
+    },
+    {
+        "url": "http://normanpd.normanok.gov/sites/default/files/PD/images/2018Q2%20Use%20of%20Force%20by%20Citizen-Officer_0.csv",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 1,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 2,
+                "specifier": "%H:%M:%S"
+            },
+            "city": {
+                "raw": "Norman"
+            },
+            "state": {
+                "raw": "OK"
+            },
+            "service_type": {
+                "index": 4
+            },
+            "reason": {
+                "index": 5
+            },
+            "force_type": {
+                "index": 6
+            },
+            "officer_id": {
+                "index": 7
+            },
+            "officer_hospitalized": {
+                "index": 9
+            },
+            "experience": {
+                "index": 10
+            },
+            "officer_age": {
+                "index": 11
+            },
+            "officer_race": {
+                "index": 12
+            },
+            "officer_sex": {
+                "index": 13
+            },
+            "disposition": {
+                "index": 14
+            },
+            "aggravating_factors": {
+                "index": 15
+            },
+            "subject_injured": {
+                "index": 17
+            },
+            "subject_hospitalized": {
+                "index": 18
+            },
+            "subject_race": {
+                "index": 19
+            },
+            "subject_sex": {
+                "index": 20
+            },
+            "arrested": {
+                "index": 16
+            }
+        }
+    }
+]

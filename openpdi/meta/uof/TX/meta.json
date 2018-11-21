@@ -1,0 +1,402 @@
+[
+    {
+        "url": "https://www.dallasopendata.com/api/views/6gnu-avpf/rows.csv?accessType=DOWNLOAD",
+        "description": "Police_Response_to_Resistance_-_2013",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 4,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 5,
+                "specifier": "%H:%M"
+            },
+            "address": {
+                "index": 3
+            },
+            "city": {
+                "raw": "Dallas"
+            },
+            "state": {
+                "raw": "TX"
+            },
+            "latitude": {
+                "index": 37
+            },
+            "longitude": {
+                "index": 38
+            },
+            "ra": {
+                "index": 31
+            },
+            "beat": {
+                "index": 32
+            },
+            "sector": {
+                "index": 33
+            },
+            "division": {
+                "index": 34
+            },
+            "district": {
+                "index": 35
+            },
+            "service_type": {
+                "index": 13
+            },
+            "force_type": {
+                "index": 14
+            },
+            "reason": {
+                "index": 15
+            },
+            "officer_sex": {
+                "index": 7
+            },
+            "officer_race": {
+                "index": 8
+            },
+            "officer_injuries": {
+                "index": 11
+            },
+            "officer_hospitalized": {
+                "index": 12
+            },
+            "hire_date": {
+                "index": 9,
+                "specifier": "%m/%d/%Y"
+            },
+            "subject_sex": {
+                "index": 25
+            },
+            "subject_race": {
+                "index": 24
+            },
+            "aggravating_factors": {
+                "index": 29
+            },
+            "arrested": {
+                "index": 28
+            },
+            "charge": {
+                "index": 30
+            },
+            "subject_injuries": {
+                "index": 27
+            }
+        }
+    },
+    {
+        "url": "https://www.dallasopendata.com/api/views/xiv3-e8g7/rows.csv?accessType=DOWNLOAD",
+        "description": "Police__2014_Response_to_Resistance",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 2,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 3,
+                "specifier": "%H:%M"
+            },
+            "address": {
+                "index": 25
+            },
+            "city": {
+                "raw": "Dallas"
+            },
+            "state": {
+                "raw": "TX"
+            },
+            "ra": {
+                "index": 26
+            },
+            "beat": {
+                "index": 27
+            },
+            "sector": {
+                "index": 28
+            },
+            "division": {
+                "index": 29
+            },
+            "district": {
+                "index": 30
+            },
+            "service_type": {
+                "index": 11
+            },
+            "force_type": {
+                "index": 13
+            },
+            "reason": {
+                "index": 14
+            },
+            "officer_sex": {
+                "index": 5
+            },
+            "officer_race": {
+                "index": 6
+            },
+            "officer_injuries": {
+                "index": 9
+            },
+            "officer_hospitalized": {
+                "index": 10
+            },
+            "hire_date": {
+                "index": 7,
+                "specifier": "%m/%d/%Y"
+            },
+            "subject_sex": {
+                "index": 19
+            },
+            "subject_race": {
+                "index": 18
+            },
+            "aggravating_factors": {
+                "index": 23
+            },
+            "arrested": {
+                "index": 22
+            },
+            "charge": {
+                "index": 24
+            },
+            "subject_injuries": {
+                "index": 21
+            }
+        }
+    },
+    {
+        "url": "https://www.dallasopendata.com/api/views/594v-2cnd/rows.csv?accessType=DOWNLOAD",
+        "description": "Police__2015_Response_to_Resistance",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 2,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 3,
+                "specifier": "%H:%M"
+            },
+            "address": {
+                "index": 25
+            },
+            "city": {
+                "raw": "Dallas"
+            },
+            "state": {
+                "raw": "TX"
+            },
+            "ra": {
+                "index": 26
+            },
+            "beat": {
+                "index": 27
+            },
+            "sector": {
+                "index": 28
+            },
+            "division": {
+                "index": 29
+            },
+            "district": {
+                "index": 30
+            },
+            "service_type": {
+                "index": 11
+            },
+            "force_type": {
+                "index": 13
+            },
+            "reason": {
+                "index": 14
+            },
+            "officer_sex": {
+                "index": 5
+            },
+            "officer_race": {
+                "index": 6
+            },
+            "officer_injuries": {
+                "index": 9
+            },
+            "officer_hospitalized": {
+                "index": 10
+            },
+            "hire_date": {
+                "index": 7,
+                "specifier": "%m/%d/%Y"
+            },
+            "subject_sex": {
+                "index": 19
+            },
+            "subject_race": {
+                "index": 18
+            },
+            "aggravating_factors": {
+                "index": 23
+            },
+            "arrested": {
+                "index": 22
+            },
+            "charge": {
+                "index": 24
+            },
+            "subject_injuries": {
+                "index": 21
+            }
+        }
+    },
+    {
+        "url": "https://www.dallasopendata.com/api/views/99fn-pvaf/rows.csv?accessType=DOWNLOAD",
+        "description": "Police_Response_to_Resistance_-_2016",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 4,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 5,
+                "specifier": "%I:%M:%S %p"
+            },
+            "address": {
+                "index": 3
+            },
+            "city": {
+                "raw": "Dallas"
+            },
+            "state": {
+                "raw": "TX"
+            },
+            "ra": {
+                "index": 30
+            },
+            "beat": {
+                "index": 31
+            },
+            "sector": {
+                "index": 32
+            },
+            "division": {
+                "index": 33
+            },
+            "district": {
+                "index": 34
+            },
+            "service_type": {
+                "index": 13
+            },
+            "force_type": {
+                "index": 14
+            },
+            "reason": {
+                "index": 15
+            },
+            "officer_sex": {
+                "index": 7
+            },
+            "officer_race": {
+                "index": 8
+            },
+            "officer_injuries": {
+                "index": 11
+            },
+            "officer_hospitalized": {
+                "index": 12
+            },
+            "hire_date": {
+                "index": 9,
+                "specifier": "%m/%d/%Y"
+            },
+            "subject_sex": {
+                "index": 24
+            },
+            "subject_race": {
+                "index": 23
+            },
+            "aggravating_factors": {
+                "index": 28
+            },
+            "arrested": {
+                "index": 27
+            },
+            "charge": {
+                "index": 29
+            },
+            "subject_injuries": {
+                "index": 26
+            }
+        }
+    },
+    {
+        "url": "https://data.austintexas.gov/api/views/iydp-s2cf/rows.csv?accessType=DOWNLOAD",
+        "description": "R2R_2015",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 2,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 3,
+                "specifier": "%H%M"
+            },
+            "address": {
+                "index": 4
+            },
+            "city": {
+                "raw": "Austin"
+            },
+            "state": {
+                "raw": "TX"
+            },
+            "district": {
+                "index": 28
+            },
+            "service_type": {
+                "index": 6
+            },
+            "force_type": {
+                "index": 14
+            },
+            "reason": {
+                "index": 7
+            },
+            "officer_injuries": {
+                "index": 22
+            },
+            "hire_date": {
+                "index": 24,
+                "specifier": "%m/%d/%Y"
+            },
+            "experience": {
+                "index": 25
+            },
+            "subject_sex": {
+                "index": 10
+            },
+            "subject_race": {
+                "index": 11
+            },
+            "aggravating_factors": {
+                "index": 13
+            },
+            "resistance_type": {
+                "index": 14
+            },
+            "subject_injuries": {
+                "index": 21
+            }
+        }
+    }
+]

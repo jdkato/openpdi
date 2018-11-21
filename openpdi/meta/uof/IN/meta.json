@@ -1,0 +1,241 @@
+[
+    {
+        "url": "https://data.bloomington.in.gov/datastore/dump/a3e4c4c3-dc1f-4246-bfe3-41baa85aa466?bom=True",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 5,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 6,
+                "specifier": "%m/%d/%Y"
+            },
+            "city": {
+                "raw": "Bloomington"
+            },
+            "state": {
+                "raw": "IN"
+            },
+            "service_type": {
+                "index": 3
+            },
+            "officer_injured": {
+                "index": 17
+            },
+            "subject_injured": {
+                "index": 15
+            },
+            "aggravating_factors": {
+                "index": 13
+            }
+        }
+    },
+    {
+        "url": "https://www.projectcomport.org/department/1/uof.csv?",
+        "description": "Indianapolis Metropolitan Police Department",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 1,
+                "specifier": "%m/%d/%Y"
+            },
+            "city": {
+                "raw": "Indianapolis"
+            },
+            "state": {
+                "raw": "IN"
+            },
+            "division": {
+                "index": 2
+            },
+            "district": {
+                "index": 3
+            },
+            "service_type": {
+                "index": 9
+            },
+            "force_type": {
+                "index": 7
+            },
+            "reason": {
+                "index": 6
+            },
+            "disposition": {
+                "index": 8
+            },
+            "officer_sex": {
+                "index": 22
+            },
+            "officer_race": {
+                "index": 21
+            },
+            "officer_age": {
+                "index": 23
+            },
+            "officer_hospitalized": {
+                "index": 16
+            },
+            "officer_hash": {
+                "index": 25
+            },
+            "officer_injuries": {
+                "index": 17
+            },
+            "experience": {
+                "index": 24
+            },
+            "subject_sex": {
+                "index": 19
+            },
+            "subject_race": {
+                "index": 18
+            },
+            "subject_hospitalized": {
+                "index": 13
+            },
+            "subject_age": {
+                "index": 20
+            },
+            "subject_injuries": {
+                "index": 14
+            },
+            "arrested": {
+                "index": 10
+            },
+            "charge": {
+                "index": 11
+            }
+        }
+    },
+    {
+        "url": "https://docs.google.com/spreadsheets/d/1wkbhr0NDZ2NcJveQqq18FpJGtgM8Z21b_mprx66EdCg/pub?output=csv",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 3,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 4,
+                "specifier": "%H:%M"
+            },
+            "city": {
+                "raw": "St. John"
+            },
+            "state": {
+                "raw": "IN"
+            },
+            "service_type": {
+                "index": 1
+            },
+            "officer_injured": {
+                "index": 15
+            },
+            "aggravating_factors": {
+                "index": 11
+            },
+            "subject_injured": {
+                "index": 13
+            },
+            "subject_armed": {
+                "index": 12
+            },
+            "subject_age": {
+                "index": 18
+            },
+            "subject_gender": {
+                "index": 17
+            },
+            "subject_race": {
+                "index": 19
+            }
+        }
+    },
+    {
+        "url": "https://data.nola.gov/api/views/9mnw-mbde/rows.csv?accessType=DOWNLOAD",
+        "description": "NOPD_Use_of_Force_Incidents",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {"index": 1, "specifier": "%m/%d/%Y"},
+
+            "city": {"raw": "New Orleans"},
+            "state": {"raw": "LA"},
+
+            "division": {"index": 4},
+
+            "service_type": {"index": 10},
+            "force_type": {"index": 13},
+            "reason": {"index": 30},
+            "disposition": {"index": 9},
+            "light_conditions": {"index": 11},
+            "weather_conditions": {"index": 12},
+
+            "officer_sex": {"index": 17},
+            "officer_race": {"index": 16},
+            "officer_age": {"index": 18},
+            "officer_injured": {"index": 31},
+
+            "subject_sex": {"index": 21},
+            "subject_race": {"index": 22},
+            "subject_hospitalized": {"index": 27},
+            "subject_age": {"index": 23},
+            "aggravating_factors": {"index": 14},
+            "subject_injured": {"index": 26},
+            "subject_build": {"index": 24},
+            "subject_height": {"index": 25},
+
+            "arrested": {"index": 28},
+            "charge": {"index": 29}
+        }
+    },
+    {
+        "url": "https://docs.google.com/spreadsheets/d/1wkbhr0NDZ2NcJveQqq18FpJGtgM8Z21b_mprx66EdCg/pub?output=csv",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 3,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 4,
+                "specifier": "%H:%M"
+            },
+            "city": {
+                "raw": "St. John"
+            },
+            "state": {
+                "raw": "IN"
+            },
+            "service_type": {
+                "index": 1
+            },
+            "officer_injured": {
+                "index": 15
+            },
+            "aggravating_factors": {
+                "index": 11
+            },
+            "subject_injured": {
+                "index": 13
+            },
+            "subject_armed": {
+                "index": 12
+            },
+            "subject_age": {
+                "index": 18
+            },
+            "subject_gender": {
+                "index": 17
+            },
+            "subject_race": {
+                "index": 19
+            }
+        }
+    }
+]

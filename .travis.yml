@@ -1,0 +1,18 @@
+language: python
+
+python:
+  - '3.4'
+
+install:
+  # - python setup.py install
+  - pip install coveralls
+  - pip install pycodestyle
+
+before_script:
+  - pycodestyle --ignore=E203 openpdi
+
+script:
+ - if [[ $TRAVIS_PYTHON_VERSION == 3* ]]; then coverage run -m  --source openpdi unittest discover; fi
+
+after_success:
+  - coveralls

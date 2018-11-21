@@ -19,7 +19,7 @@ def _read_value(cell):
     """Read the value from the given cell.
     """
     if type(cell) != str:
-        # We're dealing with a cell from other openpyxl or xlrd:
+        # We're dealing with a cell from either openpyxl or xlrd.
         if cell.value:
             return str(cell.value)
         return ""
@@ -31,10 +31,13 @@ def date(row, index, specifier):
     """Convert the given date to YYYY-MM-DD format.
     """
     value = _read_value(row[index]).split(" ")[0]
+    if "T" in value:
+        value = value.split("T")[0]
+
     try:
         d = datetime.datetime.strptime(value, specifier)
         return d.strftime("%Y-%m-%d")
-    except ValueError as e:
+    except ValueError:
         return None
 
 
@@ -56,9 +59,11 @@ def time(row, index, specifier):
             t = xlrd.xldate_as_tuple(float(value), 0)
             d = datetime.time(*t[3:])
         else:
+            if "T" in value:
+                value = value.split("T")[1]
             d = datetime.datetime.strptime(value, specifier)
         return d.strftime("%H:%M")
-    except ValueError as e:
+    except ValueError:
         return None
 
 

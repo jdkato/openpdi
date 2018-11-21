@@ -28,7 +28,7 @@
             "subject_race": {"index": 22},
             "subject_hospitalized": {"index": 27},
             "subject_age": {"index": 23},
-            "subject_condition": {"index": 14},
+            "aggravating_factors": {"index": 14},
             "subject_injured": {"index": 26},
             "subject_build": {"index": 24},
             "subject_height": {"index": 25},

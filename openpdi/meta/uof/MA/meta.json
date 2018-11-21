@@ -1,0 +1,182 @@
+[
+    {
+        "url": "https://www.northamptonpd.com/npd-open-data-portal/use-of-force/267-pdi-use-of-force-2017/file.html",
+        "description": "PDI Use of Force 2017",
+        "type": "xlsx",
+        "start": 3,
+        "columns": {
+            "time": {
+                "index": 2,
+                "specifier": "%H:%M:%S"
+            },
+            "city": {
+                "raw": "Northampton"
+            },
+            "state": {
+                "raw": "MA"
+            },
+            "force_type": {
+                "index": 9
+            },
+            "officer_injuries": {
+                "index": 13
+            },
+            "subject_sex": {
+                "index": 5
+            },
+            "subject_race": {
+                "index": 6
+            },
+            "subject_age": {
+                "index": 4
+            },
+            "aggravating_factors": {
+                "index": 8
+            },
+            "subject_ethnicity": {
+                "index": 7
+            },
+            "subject_injuries": {
+                "index": 12
+            },
+            "charge": {
+                "index": 1
+            }
+        }
+    },
+    {
+        "url": "https://www.northamptonpd.com/npd-open-data-portal/use-of-force/259-pdi-use-of-force-2016-incident-level-data/file.html",
+        "description": "PDI Use of Force 2016",
+        "type": "xlrd",
+        "start": 3,
+        "columns": {
+            "time": {
+                "index": 2,
+                "specifier": "%H:%M:%S"
+            },
+            "city": {
+                "raw": "Northampton"
+            },
+            "state": {
+                "raw": "MA"
+            },
+            "force_type": {
+                "index": 9
+            },
+            "officer_injuries": {
+                "index": 13
+            },
+            "subject_sex": {
+                "index": 5
+            },
+            "subject_race": {
+                "index": 6
+            },
+            "subject_age": {
+                "index": 4
+            },
+            "aggravating_factors": {
+                "index": 8
+            },
+            "subject_ethnicity": {
+                "index": 7
+            },
+            "subject_injuries": {
+                "index": 12
+            },
+            "charge": {
+                "index": 1
+            }
+        }
+    },
+    {
+        "url": "https://www.northamptonpd.com/npd-open-data-portal/use-of-force/249-npd-use-of-force-2015-incident-level-data/file.html",
+        "description": "PDI Use of Force 2015",
+        "type": "xlrd",
+        "start": 3,
+        "columns": {
+            "time": {
+                "index": 2,
+                "specifier": "%H:%M:%S"
+            },
+            "city": {
+                "raw": "Northampton"
+            },
+            "state": {
+                "raw": "MA"
+            },
+            "force_type": {
+                "index": 9
+            },
+            "officer_injuries": {
+                "index": 13
+            },
+            "subject_sex": {
+                "index": 5
+            },
+            "subject_race": {
+                "index": 6
+            },
+            "subject_age": {
+                "index": 4
+            },
+            "aggravating_factors": {
+                "index": 8
+            },
+            "subject_ethnicity": {
+                "index": 7
+            },
+            "subject_injuries": {
+                "index": 12
+            },
+            "charge": {
+                "index": 1
+            }
+        }
+    },
+    {
+        "url": "https://www.northamptonpd.com/npd-open-data-portal/use-of-force/253-npd-use-of-force-2014-incident-level-data/file.html",
+        "description": "PDI Use of Force 2014",
+        "type": "xlrd",
+        "start": 3,
+        "columns": {
+            "time": {
+                "index": 2,
+                "specifier": "%H:%M:%S"
+            },
+            "city": {
+                "raw": "Northampton"
+            },
+            "state": {
+                "raw": "MA"
+            },
+            "force_type": {
+                "index": 9
+            },
+            "officer_injuries": {
+                "index": 13
+            },
+            "subject_sex": {
+                "index": 5
+            },
+            "subject_race": {
+                "index": 6
+            },
+            "subject_age": {
+                "index": 4
+            },
+            "aggravating_factors": {
+                "index": 8
+            },
+            "subject_ethnicity": {
+                "index": 7
+            },
+            "subject_injuries": {
+                "index": 12
+            },
+            "charge": {
+                "index": 1
+            }
+        }
+    }
+]

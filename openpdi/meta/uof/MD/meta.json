@@ -1,0 +1,34 @@
+[
+    {
+        "url": "https://data.baltimorecity.gov/api/views/3w4d-kckv/rows.csv?accessType=DOWNLOAD",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 0,
+                "specifier": "%m/%d/%Y"
+            },
+            "address": {
+                "index": 3
+            },
+            "city": {
+                "raw": "Baltimore"
+            },
+            "state": {
+                "raw": "MD"
+            },
+            "district": {
+                "index": 2
+            },
+            "force_type": {
+                "index": 4
+            },
+            "latitude": {
+                "index": 6
+            },
+            "longitude": {
+                "index": 5
+            }
+        }
+    }
+]

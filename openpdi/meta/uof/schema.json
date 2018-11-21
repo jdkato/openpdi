@@ -2,53 +2,185 @@
     "title": "Use of Force",
     "license": "ODC_BY",
     "fields": [
-        {"label": "date", "format": "date"},
-        {"label": "time", "format": "time"},
-
-        {"label": "address", "format": "upper"},
-        {"label": "state", "format": "raw"},
-        {"label": "city", "format": "raw"},
-
-        {"label": "latitude", "format": "number"},
-        {"label": "longitude", "format": "number"},
-
-        {"label": "ra", "format": "number"},
-        {"label": "beat", "format": "number"},
-        {"label": "sector", "format": "number"},
-        {"label": "division", "format": "upper"},
-        {"label": "district", "format": "upper"},
-
-        {"label": "service_type", "format": "upper"},
-        {"label": "force_type", "format": "upper"},
-        {"label": "reason", "format": "upper"},
-        {"label": "disposition", "format": "upper"},
-        {"label": "light_conditions", "format": "upper"},
-        {"label": "weather_conditions", "format": "upper"},
-
-        {"label": "officer_sex", "format": "sex"},
-        {"label": "officer_race", "format": "race"},
-        {"label": "officer_age", "format": "number"},
-        {"label": "officer_hash", "format": "upper"},
-        {"label": "officer_injuries", "format": "upper"},
-        {"label": "officer_injured", "format": "boolean"},
-        {"label": "officer_hospitalized", "format": "boolean"},
-
-        {"label": "hire_date", "format": "date"},
-        {"label": "experience", "format": "number"},
-
-        {"label": "subject_sex", "format": "sex"},
-        {"label": "subject_race", "format": "race"},
-        {"label": "subject_ethnicity", "format": "ethnicity"},
-        {"label": "subject_condition", "format": "upper"},
-        {"label": "subject_injuries", "format": "upper"},
-        {"label": "subject_injured", "format": "boolean"},
-        {"label": "subject_hospitalized", "format": "boolean"},
-        {"label": "subject_age", "format": "number"},
-        {"label": "subject_build", "format": "upper"},
-        {"label": "subject_height", "format": "upper"},
-
-        {"label": "resistance_type", "format": "upper"},
-        {"label": "arrested", "format": "boolean"},
-        {"label": "charge", "format": "upper"}
+        {
+            "label": "date",
+            "format": "date"
+        },
+        {
+            "label": "year",
+            "format": "raw"
+        },
+        {
+            "label": "time",
+            "format": "time"
+        },
+        {
+            "label": "address",
+            "format": "upper"
+        },
+        {
+            "label": "state",
+            "format": "raw"
+        },
+        {
+            "label": "city",
+            "format": "raw"
+        },
+        {
+            "label": "latitude",
+            "format": "number"
+        },
+        {
+            "label": "longitude",
+            "format": "number"
+        },
+        {
+            "label": "ra",
+            "format": "number"
+        },
+        {
+            "label": "beat",
+            "format": "number"
+        },
+        {
+            "label": "sector",
+            "format": "number"
+        },
+        {
+            "label": "division",
+            "format": "upper"
+        },
+        {
+            "label": "district",
+            "format": "upper"
+        },
+        {
+            "label": "service_type",
+            "format": "upper"
+        },
+        {
+            "label": "case_number",
+            "format": "upper"
+        },
+        {
+            "label": "force_type",
+            "format": "upper"
+        },
+        {
+            "label": "reason",
+            "format": "upper"
+        },
+        {
+            "label": "disposition",
+            "format": "upper"
+        },
+        {
+            "label": "light_conditions",
+            "format": "upper"
+        },
+        {
+            "label": "weather_conditions",
+            "format": "upper"
+        },
+        {
+            "label": "officer_sex",
+            "format": "sex"
+        },
+        {
+            "label": "officer_race",
+            "format": "race"
+        },
+        {
+            "label": "officer_age",
+            "format": "number"
+        },
+        {
+            "label": "officer_hash",
+            "format": "upper"
+        },
+        {
+            "label": "officer_id",
+            "format": "upper"
+        },
+        {
+            "label": "officer_injuries",
+            "format": "upper"
+        },
+        {
+            "label": "officer_injured",
+            "format": "boolean"
+        },
+        {
+            "label": "officer_hospitalized",
+            "format": "boolean"
+        },
+        {
+            "label": "hire_date",
+            "format": "date"
+        },
+        {
+            "label": "experience",
+            "format": "number"
+        },
+        {
+            "label": "subject_sex",
+            "format": "sex"
+        },
+        {
+            "label": "subject_dob",
+            "format": "date"
+        },
+        {
+            "label": "subject_race",
+            "format": "race"
+        },
+        {
+            "label": "subject_ethnicity",
+            "format": "ethnicity"
+        },
+        {
+            "label": "aggravating_factors",
+            "format": "upper"
+        },
+        {
+            "label": "subject_injuries",
+            "format": "upper"
+        },
+        {
+            "label": "subject_injured",
+            "format": "boolean"
+        },
+        {
+            "label": "subject_armed",
+            "format": "boolean"
+        },
+        {
+            "label": "subject_hospitalized",
+            "format": "boolean"
+        },
+        {
+            "label": "subject_age",
+            "format": "number"
+        },
+        {
+            "label": "subject_build",
+            "format": "upper"
+        },
+        {
+            "label": "subject_height",
+            "format": "upper"
+        },
+        {
+            "label": "resistance_type",
+            "format": "upper"
+        },
+        {
+            "label": "arrested",
+            "format": "boolean"
+        },
+        {
+            "label": "charge",
+            "format": "upper"
+        }
     ]
 }
