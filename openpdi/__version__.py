@@ -1,7 +1,7 @@
 __title__ = "OpenPDI"
 __description__ = "A library for working with data submitted to the PDI."
 __url__ = "https://openpdi.com"
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "Joseph Kato"
 __author_email__ = "joseph@jdkato.io"
 __license__ = "MIT"
