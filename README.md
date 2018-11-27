@@ -31,15 +31,16 @@ $ pip install openpdi
 
 ```python
 >>> import openpdi
+>>> import csv
 # Find all data Use of Force datasets with a 'hire_date' column.
 >>> dataset = openpdi.Dataset('uof', columns=['hire_date'])
->>> dataset.agencies
-...
->>> gen = dataset.download()
 # `gen` is a generator object for iterating over the CSV-formatted
 # dataset.
->>> next(gen) # The headers
-...
+>>> gen = dataset.download()
+# Write to a CSV file:
+>>> with open('dataset.csv, 'w+') as f:
+        writer = csv.writer(f, delimiter=",", quoting=csv.QUOTE_ALL)
+        writer.writerows(gen)
 ```
 
 See the [API docs]() for more information.
