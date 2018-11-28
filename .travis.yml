@@ -4,9 +4,9 @@ python:
   - '3.4'
 
 install:
-  # - python setup.py install
   - pip install coveralls
   - pip install pycodestyle
+  - pip install jsonschema
 
 before_script:
   - pycodestyle --ignore=E203 openpdi

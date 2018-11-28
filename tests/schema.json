@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "fields": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "label": {
+                        "type": "string"
+                    },
+                    "format": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "title": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "title",
+        "fields"
+    ]
+}
