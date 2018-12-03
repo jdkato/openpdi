@@ -29,7 +29,7 @@ $ pip install openpdi
 
 ###### Usage
 
-| Data set     | ID    | Source                                                      |
+| Dataset     | ID    | Source                                                      |
 |--------------|-------|-------------------------------------------------------------|
 | [Use of Force][1] | `uof` | https://www.policedatainitiative.org/datasets/use-of-force/ |
 
