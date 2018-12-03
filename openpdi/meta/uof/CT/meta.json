@@ -35,7 +35,7 @@
             "subject_race": {
                 "index": 6
             },
-            "subject_subject_injuries": {
+            "subject_injuries": {
                 "index": 12
             },
             "aggravating_factors": {

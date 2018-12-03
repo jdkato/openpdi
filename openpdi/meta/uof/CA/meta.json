@@ -1,6 +1,6 @@
 [
     {
-        "url": "https://www.norwichct.org/Archive.aspx?AMID=61&Type=Recent",
+        "url": "https://opendata.ci.richmond.ca.us/api/views/68r5-7usm/rows.csv?accessType=DOWNLOAD",
         "type": "csv",
         "start": 1,
         "columns": {

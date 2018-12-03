@@ -3,35 +3,232 @@
     "fields": [
         {
             "label": "date",
-            "format": "date"
+            "format": "date",
+            "description": "The date of the incident in YYYY-MM-DD format.",
+            "example": "2015-12-31"
         },
         {
             "label": "year",
-            "format": "raw"
+            "format": "raw",
+            "description": "The year of the incident in YYYY format.",
+            "example": "2015"
         },
         {
             "label": "time",
-            "format": "time"
+            "format": "time",
+            "description": "The 24-hour time of the incident, in HH:MM format.",
+            "example": "20:15"
         },
         {
             "label": "address",
-            "format": "upper"
+            "format": "upper",
+            "description": "The street address of the incident (upper-cased).",
+            "example": "1511 FARO DR"
         },
         {
             "label": "state",
-            "format": "raw"
+            "format": "raw",
+            "description": "The two-letter code for the state in which the incident occurred.",
+            "example": "TX"
         },
         {
             "label": "city",
-            "format": "raw"
+            "format": "raw",
+            "description": "The name of the city in which the incident occured.",
+            "example": "Norristown"
         },
         {
             "label": "latitude",
-            "format": "number"
+            "format": "number",
+            "description": "The latitudinal position of the incident.",
+            "example": "37.3860517"
         },
         {
             "label": "longitude",
-            "format": "number"
+            "format": "number",
+            "description": "The longitudinal position of the incident.",
+            "example": "-122.0838511"
+        },
+        {
+            "label": "service_type",
+            "format": "upper",
+            "description": "The reason the officer(s) reported to the scene.",
+            "example": "DOMESTIC DISPUTE"
+        },
+        {
+            "label": "force_type",
+            "format": "upper",
+            "description": "The type of force used.",
+            "example": "BALANCE DISPLACEMENT"
+        },
+        {
+            "label": "reason",
+            "format": "upper",
+            "description": "The reason for using force.",
+            "example": "RESISTING ARREST"
+        },
+        {
+            "label": "light_conditions",
+            "format": "upper",
+            "description": "The level of available light during the incident.",
+            "example": "DAYLIGHT"
+        },
+        {
+            "label": "weather_conditions",
+            "format": "upper",
+            "description": "The weather during the incident",
+            "example": "RAINING"
+        },
+        {
+            "label": "officer_sex",
+            "format": "sex",
+            "description": "The sex of the involved officer.",
+            "example": "MALE or FEMALE"
+        },
+        {
+            "label": "officer_race",
+            "format": "race",
+            "description": "The race of the involved officer.",
+            "example": "WHITE"
+        },
+        {
+            "label": "officer_age",
+            "format": "number",
+            "description": "The age of the involved officer.",
+            "example": "43"
+        },
+        {
+            "label": "officer_injuries",
+            "format": "upper",
+            "description": "A summary of injuries to the involved officer.",
+            "example": "laceration to hand and elbow"
+        },
+        {
+            "label": "officer_injured",
+            "format": "boolean",
+            "description": "A boolean value indicating if the involved officer was injured.",
+            "example": "TRUE or FALSE"
+        },
+        {
+            "label": "officer_hospitalized",
+            "format": "boolean",
+            "description": "A boolean value indicating if the involved officer was hospitalized.",
+            "example": "TRUE or FALSE"
+        },
+        {
+            "label": "hire_date",
+            "format": "date",
+            "description": "The hire date of the involved officer, in YYYY-MM-DD format.",
+            "example": "1993-12-31"
+        },
+        {
+            "label": "experience",
+            "format": "number",
+            "description": "The number of years worked by the involved officer.",
+            "example": "10"
+        },
+        {
+            "label": "subject_sex",
+            "format": "sex",
+            "description": "The sex of the involved subject.",
+            "example": "MALE or FEMALE"
+        },
+        {
+            "label": "subject_dob",
+            "format": "date",
+            "description": "The date of birth of the involved subject, in YYYY-MM-DD format.",
+            "example": "1993-12-31"
+        },
+        {
+            "label": "subject_race",
+            "format": "race",
+            "description": "The race of the involved subject.",
+            "example": "WHITE"
+        },
+        {
+            "label": "subject_ethnicity",
+            "format": "ethnicity",
+            "description": "The ethnicity of the involved subject.",
+            "example": "HISPANIC OR NON-HISP"
+        },
+        {
+            "label": "aggravating_factors",
+            "format": "upper",
+            "description": "A summary of aggravating factors",
+            "example": "ALCOHOL"
+        },
+        {
+            "label": "subject_injuries",
+            "format": "upper",
+            "description": "A summary of injuries to the involved subject.",
+            "example": "laceration to hand and elbow"
+        },
+        {
+            "label": "subject_injured",
+            "format": "boolean",
+            "description": "A boolean value indicating if the involved subject was injured.",
+            "example": "TRUE or FALSE"
+        },
+        {
+            "label": "subject_armed",
+            "format": "boolean",
+            "description": "A boolean value indicating if the involved subject was armed.",
+            "example": "TRUE or FALSE"
+        },
+        {
+            "label": "subject_hospitalized",
+            "format": "boolean",
+            "description": "A boolean value indicating if the involved subject was hospitalized.",
+            "example": "TRUE or FALSE"
+        },
+        {
+            "label": "subject_age",
+            "format": "number",
+            "description": "The age of the involved subject.",
+            "example": "43"
+        },
+        {
+            "label": "resistance_type",
+            "format": "upper",
+            "description": "The type of resistance by the involved subject.",
+            "example": "EMPTY HAND DEFENSIVE RESISTANCE"
+        },
+        {
+            "label": "arrested",
+            "format": "boolean",
+            "description": "A boolean value indicating if the involved subject was arrested.",
+            "example": "TRUE or FALSE"
+        },
+        {
+            "label": "charge",
+            "format": "upper",
+            "description": "A description of the charges assigned to the involved subject.",
+            "example": "POS/MARIJ, POSSESSION (COCAINE)"
+        },
+
+        {
+            "label": "subject_build",
+            "format": "upper"
+        },
+        {
+            "label": "subject_height",
+            "format": "upper"
+        },
+        {
+            "label": "officer_id",
+            "format": "upper"
+        },
+        {
+            "label": "disposition",
+            "format": "upper"
+        },
+        {
+            "label": "officer_hash",
+            "format": "upper"
+        },
+        {
+            "label": "case_number",
+            "format": "upper"
         },
         {
             "label": "ra",
@@ -51,134 +248,6 @@
         },
         {
             "label": "district",
-            "format": "upper"
-        },
-        {
-            "label": "service_type",
-            "format": "upper"
-        },
-        {
-            "label": "case_number",
-            "format": "upper"
-        },
-        {
-            "label": "force_type",
-            "format": "upper"
-        },
-        {
-            "label": "reason",
-            "format": "upper"
-        },
-        {
-            "label": "disposition",
-            "format": "upper"
-        },
-        {
-            "label": "light_conditions",
-            "format": "upper"
-        },
-        {
-            "label": "weather_conditions",
-            "format": "upper"
-        },
-        {
-            "label": "officer_sex",
-            "format": "sex"
-        },
-        {
-            "label": "officer_race",
-            "format": "race"
-        },
-        {
-            "label": "officer_age",
-            "format": "number"
-        },
-        {
-            "label": "officer_hash",
-            "format": "upper"
-        },
-        {
-            "label": "officer_id",
-            "format": "upper"
-        },
-        {
-            "label": "officer_injuries",
-            "format": "upper"
-        },
-        {
-            "label": "officer_injured",
-            "format": "boolean"
-        },
-        {
-            "label": "officer_hospitalized",
-            "format": "boolean"
-        },
-        {
-            "label": "hire_date",
-            "format": "date"
-        },
-        {
-            "label": "experience",
-            "format": "number"
-        },
-        {
-            "label": "subject_sex",
-            "format": "sex"
-        },
-        {
-            "label": "subject_dob",
-            "format": "date"
-        },
-        {
-            "label": "subject_race",
-            "format": "race"
-        },
-        {
-            "label": "subject_ethnicity",
-            "format": "ethnicity"
-        },
-        {
-            "label": "aggravating_factors",
-            "format": "upper"
-        },
-        {
-            "label": "subject_injuries",
-            "format": "upper"
-        },
-        {
-            "label": "subject_injured",
-            "format": "boolean"
-        },
-        {
-            "label": "subject_armed",
-            "format": "boolean"
-        },
-        {
-            "label": "subject_hospitalized",
-            "format": "boolean"
-        },
-        {
-            "label": "subject_age",
-            "format": "number"
-        },
-        {
-            "label": "subject_build",
-            "format": "upper"
-        },
-        {
-            "label": "subject_height",
-            "format": "upper"
-        },
-        {
-            "label": "resistance_type",
-            "format": "upper"
-        },
-        {
-            "label": "arrested",
-            "format": "boolean"
-        },
-        {
-            "label": "charge",
             "format": "upper"
         }
     ]

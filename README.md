@@ -34,13 +34,13 @@ import csv
 import openpdi
 
 # Find all data Use of Force datasets with a 'hire_date' column.
-dataset = openpdi.Dataset('uof', columns=['hire_date'])
+dataset = openpdi.Dataset("uof", columns=["hire_date"])
 # `gen` is a generator object for iterating over the CSV-formatted
 # dataset.
 gen = dataset.download()
 
 # Write to a CSV file:
-with open('dataset.csv, 'w+') as f:
+with open("dataset.csv", "w+") as f:
     writer = csv.writer(f, delimiter=",", quoting=csv.QUOTE_ALL)
     writer.writerows(gen)
 ```
