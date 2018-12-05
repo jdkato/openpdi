@@ -19,8 +19,6 @@ class Dataset(object):
 
     def __init__(self, topic, scope=[], columns=[], strict=False):
         """Create a `Dataset` for `topic`.
-
-        `scope` a
         """
         schema_path = _DATA_PATH.joinpath(topic, "schema.json")
         assert schema_path.exists(), "Unknown dataset"
@@ -32,7 +30,7 @@ class Dataset(object):
 
         # The topic of the dataset.
         #
-        # See (...) for a list of available topics.
+        # See the README for a list of available topics.
         self.topic = topic
 
         # The title of the dataset.
@@ -40,7 +38,8 @@ class Dataset(object):
 
         # The standardized columns in this dataset.
         #
-        # See (...) for descriptions of the standardized formats.
+        # See the relevant `schema.json` file for descriptions of the avilable
+        # standardized fields.
         self.columns = schema["fields"]
 
         # A list of agencies with data in this dataset.
@@ -48,6 +47,12 @@ class Dataset(object):
         # See the [PDI website](https://www.policedatainitiative.org/) for more
         # information.
         self.agencies = set()
+
+        # The URLs of the external sources.
+        self.sources = set()
+
+        # The number of files in this dataset.
+        self._size = 0
 
         for f in _DATA_PATH.glob("**/meta.json"):
             for meta in _read_meta(f):
@@ -68,10 +73,13 @@ class Dataset(object):
                     self._headers.update(sample_cols)
 
                 self._sources.append(meta)
+                self._size += 1
+
+                self.sources.add(meta["url"])
                 self.agencies.add(agency)
 
     def __len__(self):
-        return len(self.agencies)
+        return self._size
 
     def __repr__(self):
         return "Dataset({!r})".format(self.title)

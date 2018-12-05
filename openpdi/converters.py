@@ -9,6 +9,8 @@ import xlrd
 def fetch(meta):
     """Fetch the provided resource, `url`.
     """
+    # TODO: To avoid reading the entire file into memory, should we use
+    # `stream=True`?
     r = requests.get(meta["url"], allow_redirects=True)
     iterator = None
 

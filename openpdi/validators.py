@@ -122,13 +122,10 @@ def boolean(row, index):
 @VALIDATOR
 def number(row, index):
     """Convert ``row[index]`` to a numerical value.
+
+    TODO: Should we need to convert via `float` / `int`?
     """
-    value = _read_value(row[index])
-    if not any(s.isdigit() for s in value):
-        return value
-    elif value.isdigit():
-        return int(value)
-    return float(value)
+    return _read_value(row[index])
 
 
 @VALIDATOR

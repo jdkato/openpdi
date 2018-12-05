@@ -147,7 +147,7 @@
             "subject_age": {
                 "index": 18
             },
-            "subject_gender": {
+            "subject_sex": {
                 "index": 17
             },
             "subject_race": {
