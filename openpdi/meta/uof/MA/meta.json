@@ -1,8 +1,8 @@
 [
     {
-        "url": "https://www.northamptonpd.com/npd-open-data-portal/use-of-force/267-pdi-use-of-force-2017/file.html",
+        "url": "https://github.com/OpenPDI/data/releases/download/NPD-MA/uof-17.csv",
         "description": "PDI Use of Force 2017",
-        "type": "xlsx",
+        "type": "csv",
         "start": 3,
         "columns": {
             "time": {
@@ -45,9 +45,9 @@
         }
     },
     {
-        "url": "https://www.northamptonpd.com/npd-open-data-portal/use-of-force/259-pdi-use-of-force-2016-incident-level-data/file.html",
+        "url": "https://github.com/OpenPDI/data/releases/download/NPD-MA/uof-16.csv",
         "description": "PDI Use of Force 2016",
-        "type": "xlrd",
+        "type": "csv",
         "start": 3,
         "columns": {
             "time": {
@@ -90,9 +90,9 @@
         }
     },
     {
-        "url": "https://www.northamptonpd.com/npd-open-data-portal/use-of-force/249-npd-use-of-force-2015-incident-level-data/file.html",
+        "url": "https://github.com/OpenPDI/data/releases/download/NPD-MA/uof-15.csv",
         "description": "PDI Use of Force 2015",
-        "type": "xlrd",
+        "type": "csv",
         "start": 3,
         "columns": {
             "time": {
@@ -135,9 +135,9 @@
         }
     },
     {
-        "url": "https://www.northamptonpd.com/npd-open-data-portal/use-of-force/253-npd-use-of-force-2014-incident-level-data/file.html",
+        "url": "https://github.com/OpenPDI/data/releases/download/NPD-MA/uof-14.csv",
         "description": "PDI Use of Force 2014",
-        "type": "xlrd",
+        "type": "csv",
         "start": 3,
         "columns": {
             "time": {

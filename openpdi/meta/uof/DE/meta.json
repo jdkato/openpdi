@@ -1,6 +1,6 @@
 [
     {
-        "url": "http://www1.udel.edu/police/crime-stats/open_data/2016_use_of_force_csv.csv?",
+        "url": "https://github.com/OpenPDI/data/releases/download/UDPD-DE/uof-16.csv",
         "type": "csv",
         "start": 1,
         "columns": {

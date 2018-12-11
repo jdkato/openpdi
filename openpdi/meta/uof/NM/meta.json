@@ -1,0 +1,36 @@
+[
+    {
+        "url": "http://www.las-cruces.org/~/media/lcpublicwebdev2/site%20documents/article%20documents/police/web%202016%20uof%20statistics%201.ashx?la=en",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "year": {
+                "raw": "2016"
+            },
+            "city": {
+                "raw": "Las Cruces"
+            },
+            "state": {
+                "raw": "NM"
+            },
+            "case_number": {
+                "index": 0
+            },
+            "reason": {
+                "index": 3
+            },
+            "officer_injured": {
+                "index": 6
+            },
+            "officer_hospitalized": {
+                "index": 7
+            },
+            "subject_injured": {
+                "index": 6
+            },
+            "subject_hospitalized": {
+                "index": 8
+            }
+        }
+    }
+]

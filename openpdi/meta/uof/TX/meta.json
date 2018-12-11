@@ -1,6 +1,6 @@
 [
     {
-        "url": "https://www.dallasopendata.com/api/views/6gnu-avpf/rows.csv?accessType=DOWNLOAD",
+        "url": "https://github.com/OpenPDI/data/releases/download/DPD-TX/uof-13.csv",
         "description": "Police_Response_to_Resistance_-_2013",
         "type": "csv",
         "start": 1,
@@ -89,7 +89,7 @@
         }
     },
     {
-        "url": "https://www.dallasopendata.com/api/views/xiv3-e8g7/rows.csv?accessType=DOWNLOAD",
+        "url": "https://github.com/OpenPDI/data/releases/download/DPD-TX/uof-14.csv",
         "description": "Police__2014_Response_to_Resistance",
         "type": "csv",
         "start": 1,
@@ -172,7 +172,7 @@
         }
     },
     {
-        "url": "https://www.dallasopendata.com/api/views/594v-2cnd/rows.csv?accessType=DOWNLOAD",
+        "url": "https://github.com/OpenPDI/data/releases/download/DPD-TX/uof-15.csv",
         "description": "Police__2015_Response_to_Resistance",
         "type": "csv",
         "start": 1,
@@ -255,7 +255,7 @@
         }
     },
     {
-        "url": "https://www.dallasopendata.com/api/views/99fn-pvaf/rows.csv?accessType=DOWNLOAD",
+        "url": "https://github.com/OpenPDI/data/releases/download/DPD-TX/uof-16.csv",
         "description": "Police_Response_to_Resistance_-_2016",
         "type": "csv",
         "start": 1,
@@ -338,7 +338,7 @@
         }
     },
     {
-        "url": "https://data.austintexas.gov/api/views/iydp-s2cf/rows.csv?accessType=DOWNLOAD",
+        "url": "https://github.com/OpenPDI/data/releases/download/APD-TX/uof-15.csv",
         "description": "R2R_2015",
         "type": "csv",
         "start": 1,

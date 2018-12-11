@@ -1,8 +1,8 @@
 [
     {
-        "url": "https://www.norwichct.org/Archive.aspx?AMID=61&Type=Recent",
-        "type": "xlrd",
-        "start": 1,
+        "url": "https://github.com/OpenPDI/data/releases/download/NPD-CT/uof.csv",
+        "type": "csv",
+        "start": 2,
         "columns": {
             "time": {
                 "index": 2,

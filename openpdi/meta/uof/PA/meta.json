@@ -1,7 +1,7 @@
 [
     {
-        "url": "http://www.norristown.org/DocumentCenter/View/221/Use-of-Force-Data-XLS",
-        "type": "xlsx",
+        "url": "https://github.com/OpenPDI/data/releases/download/NPD-PA/uof.csv",
+        "type": "csv",
         "start": 1,
         "columns": {
             "date": {

@@ -1,6 +1,6 @@
 [
     {
-        "url": "https://data.cincinnati-oh.gov/api/views/8us8-wi2w/rows.csv?accessType=DOWNLOAD",
+        "url": "https://github.com/OpenPDI/data/releases/download/CPD-OH/uof.csv",
         "description": "PDI__Police_Data_Initiative__Use_of_Force",
         "type": "csv",
         "start": 1,

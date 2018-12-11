@@ -1,6 +1,6 @@
 [
     {
-        "url": "https://data.baltimorecity.gov/api/views/3w4d-kckv/rows.csv?accessType=DOWNLOAD",
+        "url": "https://github.com/OpenPDI/data/releases/download/BPD-MD/uof.csv",
         "type": "csv",
         "start": 1,
         "columns": {

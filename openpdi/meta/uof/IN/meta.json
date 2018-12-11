@@ -1,6 +1,6 @@
 [
     {
-        "url": "https://data.bloomington.in.gov/datastore/dump/a3e4c4c3-dc1f-4246-bfe3-41baa85aa466?bom=True",
+        "url": "https://github.com/OpenPDI/data/releases/download/BPD-IN/uof.csv",
         "type": "csv",
         "start": 1,
         "columns": {
@@ -33,7 +33,7 @@
         }
     },
     {
-        "url": "https://www.projectcomport.org/department/1/uof.csv?",
+        "url": "https://github.com/OpenPDI/data/releases/download/IMPD-IN/uof.csv",
         "description": "Indianapolis Metropolitan Police Department",
         "type": "csv",
         "start": 1,
@@ -111,7 +111,7 @@
         }
     },
     {
-        "url": "https://docs.google.com/spreadsheets/d/1wkbhr0NDZ2NcJveQqq18FpJGtgM8Z21b_mprx66EdCg/pub?output=csv",
+        "url": "https://github.com/OpenPDI/data/releases/download/SJPD-IN/uof.csv",
         "type": "csv",
         "start": 1,
         "columns": {

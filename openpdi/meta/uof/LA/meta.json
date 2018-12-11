@@ -1,6 +1,6 @@
 [
     {
-        "url": "https://data.nola.gov/api/views/9mnw-mbde/rows.csv?accessType=DOWNLOAD",
+        "url": "https://github.com/OpenPDI/data/releases/download/NOPD-LA/uof.csv",
         "description": "NOPD_Use_of_Force_Incidents",
         "type": "csv",
         "start": 1,

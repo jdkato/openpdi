@@ -1,41 +1,7 @@
 [
     {
-        "url": "http://www.las-cruces.org/~/media/lcpublicwebdev2/site%20documents/article%20documents/police/web%202016%20uof%20statistics%201.ashx?la=en",
-        "type": "xlsx",
-        "start": 1,
-        "columns": {
-            "year": {
-                "raw": "2016"
-            },
-            "city": {
-                "raw": "Las Cruces"
-            },
-            "state": {
-                "raw": "NV"
-            },
-            "case_number": {
-                "index": 0
-            },
-            "reason": {
-                "index": 3
-            },
-            "officer_injured": {
-                "index": 6
-            },
-            "officer_hospitalized": {
-                "index": 7
-            },
-            "subject_injured": {
-                "index": 6
-            },
-            "subject_hospitalized": {
-                "index": 8
-            }
-        }
-    },
-    {
-        "url": "http://cityofhenderson.com/docs/default-source/police-docs/police-data-initiative/2015-hpd-uof-incidents---webpage-posting.xlsx?sfvrsn=2",
-        "type": "xlsx",
+        "url": "https://github.com/OpenPDI/data/releases/download/HPD-NV/uof-15.csv",
+        "type": "csv",
         "start": 1,
         "columns": {
             "date": {
@@ -89,7 +55,7 @@
         }
     },
     {
-        "url": "http://cityofhenderson.com/docs/default-source/police-docs/police-data-initiative/2016-hpd-uof-incidents.csv?sfvrsn=2",
+        "url": "https://github.com/OpenPDI/data/releases/download/HPD-NV/uof-16.csv",
         "type": "csv",
         "start": 1,
         "columns": {

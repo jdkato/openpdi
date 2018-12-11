@@ -9,9 +9,7 @@
             "type": {
                 "type": "string",
                 "enum": [
-                    "csv",
-                    "xlsx",
-                    "xlrd"
+                    "csv"
                 ]
             }
         },
