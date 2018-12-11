@@ -2,12 +2,14 @@
 
 """
 """
+import codecs
+import csv
 import json
 import pathlib
 
+import requests
 import tabulate
 
-from .converters import fetch
 from .validators import VALIDATORS
 
 _DATA_PATH = META = pathlib.Path(__file__).parents[1] / "openpdi" / "meta"
@@ -111,12 +113,23 @@ def _read_meta(path):
         return json.load(meta)
 
 
+def _fetch(meta):
+    """Fetch the provided data source.
+    """
+    with requests.get(meta["url"], stream=True) as r:
+        reader = csv.reader(codecs.iterdecode(r.iter_lines(), "utf-8"))
+        for i, line in enumerate(reader):
+            if i <= meta["start"]:
+                continue
+            yield line
+
+
 def _merge(headers, sources, formats):
     """Merge multiple data sources into a single CSV file.
     """
     yield headers
     for source in sources:
-        for row in fetch(source):
+        for row in _fetch(source):
             made = []
             for header in headers:
                 if header in source["columns"]:
