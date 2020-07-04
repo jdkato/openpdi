@@ -9,6 +9,6 @@
 ## Description of standardized data
 
 Each row in the standardized data contains information for single
-officer-subject *Use of Force* incident. If multiple officers or subjects were involved, there will be multiple rows for the given incident.
+officer-subject `uof` incident. If multiple officers or subjects were involved, there will be multiple rows for the given incident.
 
 See [`uof/schema.json`](https://github.com/OpenPDI/openpdi/blob/master/openpdi/meta/uof/schema.json) for a summary of the available fields.

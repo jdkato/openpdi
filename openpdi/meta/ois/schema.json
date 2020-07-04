@@ -1,0 +1,101 @@
+{
+    "title": "Officer-Involved Shootings",
+    "fields": [
+        {
+            "label": "date",
+            "format": "date",
+            "description": "The date of the incident in YYYY-MM-DD format.",
+            "example": "2015-12-31"
+        },
+        {
+            "label": "state",
+            "format": "state",
+            "description": "The two-letter code for the state in which the incident occurred.",
+            "example": "TX"
+        },
+        {
+            "label": "city",
+            "format": "none",
+            "description": "The name of the city in which the incident occured.",
+            "example": "Norristown"
+        },
+        {
+            "label": "latitude",
+            "format": "number",
+            "description": "The latitudinal position of the incident.",
+            "example": "37.3860517"
+        },
+        {
+            "label": "longitude",
+            "format": "number",
+            "description": "The longitudinal position of the incident.",
+            "example": "-122.0838511"
+        },
+        {
+            "label": "body_camera",
+            "format": "none"
+        },
+        {
+            "label": "subject_sex",
+            "format": "sex",
+            "description": "The sex of the involved subject.",
+            "example": "MALE or FEMALE"
+        },
+        {
+            "label": "subject_age",
+            "format": "number"
+        },
+        {
+            "label": "subject_race",
+            "format": "race",
+            "description": "The race of the involved subject.",
+            "example": "WHITE"
+        },
+        {
+            "label": "subject_name",
+            "format": "none"
+        },
+        {
+            "label": "subject_armed",
+            "format": "boolean"
+        },
+        {
+            "label": "fleeing",
+            "format": "none"
+        },
+        {
+            "label": "officer_charged",
+            "format": "none"
+        },
+        {
+            "label": "description",
+            "format": "none"
+        },
+        {
+            "label": "blurb",
+            "format": "none"
+        },
+        {
+            "label": "threat_level_display",
+            "format": "none"
+        },
+        {
+            "label": "weapon_class",
+            "format": "none"
+        },
+        {
+            "label": "weapon_type",
+            "format": "none"
+        },
+        {
+            "label": "aggravating_factors",
+            "format": "upper",
+            "description": "A summary of aggravating factors",
+            "example": "ALCOHOL"
+        },
+        {
+            "label": "source",
+            "format": "none"
+        }
+    ]
+}

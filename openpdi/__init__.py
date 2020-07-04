@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-"""
-"""
 import codecs
 import csv
 import json
@@ -22,8 +20,11 @@ class Dataset(object):
     def __init__(self, topic, scope=[], columns=[], strict=False):
         """Create a `Dataset` for `topic`.
         """
-        schema_path = _DATA_PATH.joinpath(topic, "schema.json")
-        assert schema_path.exists(), "Unknown dataset"
+        data = _DATA_PATH.joinpath(topic)
+        assert data.exists(), "Unknown dataset"
+
+        schema_path = data.joinpath("schema.json")
+        assert schema_path.exists(), "Missing schema"
 
         schema = _read_meta(schema_path)
 
@@ -56,18 +57,16 @@ class Dataset(object):
         # The number of files in this dataset.
         self._size = 0
 
-        for f in _DATA_PATH.glob("**/meta.json"):
+        for f in data.glob("**/meta.json"):
             for meta in _read_meta(f):
                 sample_cols = meta["columns"]
 
-                state = meta["columns"]["state"]["raw"]
-                agency = "{0}-{1}".format(
-                    state, meta["columns"]["city"]["raw"]
-                )
+                state = f.parent.name
+                agency = meta["columns"].get("city", {}).get("raw", state)
 
                 if not all(h in sample_cols for h in columns):
                     continue
-                elif scope and all(p not in scope for p in (state, agency)):
+                elif scope and state not in scope:
                     continue
                 elif strict:
                     self._headers.update(columns)
@@ -89,7 +88,7 @@ class Dataset(object):
     def __unicode__(self):
         return tabulate.tabulate(
             [[self.title, self.topic, str(self.__len__())]],
-            ["Title", "ID", "Number of Agencies"],
+            ["Title", "ID", "Number of Sources"],
             tablefmt="pipe",
         )
 

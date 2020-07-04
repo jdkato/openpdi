@@ -1,6 +1,8 @@
 """OpenPDI - Cell Validators
 """
 import datetime
+
+import us
 import xlrd
 
 
@@ -46,6 +48,13 @@ def raw(row, raw):
     """Return a pre-specified value instead of ``row[index]``.
     """
     return raw
+
+
+@VALIDATOR
+def none(row, index):
+    """Return the unprocessed value instead of ``row[index]``.
+    """
+    return _read_value(row[index])
 
 
 @VALIDATOR
@@ -142,6 +151,18 @@ def capitalize(row, index):
     """Return a capitalized version of ``row[index]``.
     """
     return _read_value(row[index]).capitalize()
+
+
+@VALIDATOR
+def state(row, index):
+    """Return the two-letter code for the given state.
+    """
+    value = _read_value(row[index])
+
+    state = us.states.lookup(value)
+    if state:
+        return state.abbr
+    return value
 
 
 @VALIDATOR

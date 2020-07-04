@@ -1,0 +1,64 @@
+[
+    {
+        "url": "https://github.com/OpenPDI/data/releases/download/WAPO-OIS/policeshootings_all.csv",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "subject_age": {
+                "index": 0
+            },
+            "weapon_type": {
+                "index": 1
+            },
+            "blurb": {
+                "index": 2
+            },
+            "city": {
+                "index": 3
+            },
+            "date": {
+                "index": 4,
+                "specifier": "%Y-%m-%d"
+            },
+            "description": {
+                "index": 5
+            },
+            "fleeing": {
+                "index": 7
+            },
+            "subject_sex": {
+                "index": 8
+            },
+            "body_camera": {
+                "index": 10
+            },
+            "officer_charged": {
+                "index": 12
+            },
+            "latitude": {
+                "index": 13
+            },
+            "longitude": {
+                "index": 14
+            },
+            "subject_name": {
+                "index": 16
+            },
+            "subject_race": {
+                "index": 17
+            },
+            "source": {
+                "index": 20
+            },
+            "state": {
+                "index": 24
+            },
+            "threat_level_display": {
+                "index": 25
+            },
+            "weapon_class": {
+                "index": 26
+            }
+        }
+    }
+]
