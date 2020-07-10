@@ -1,4 +1,4 @@
-# OpenPDI [![Build Status](https://travis-ci.org/OpenPDI/openpdi.svg?branch=master)](https://travis-ci.org/OpenPDI/openpdi) [![code style](https://img.shields.io/badge/code%20style-black-%23000.svg)](https://github.com/OpenPDI/openpdi) [![DOI](https://zenodo.org/badge/153943607.svg)](https://zenodo.org/badge/latestdoi/153943607) [![Thanks](https://img.shields.io/badge/say-thanks-ff69b4.svg?&amp;logo=gratipay&amp;logoColor=white)](#say-thanks)
+# OpenPDI [![Build Status](https://travis-ci.org/OpenPDI/openpdi.svg?branch=master)](https://travis-ci.org/OpenPDI/openpdi) [![code style](https://img.shields.io/badge/code%20style-black-%23000.svg)](https://github.com/OpenPDI/openpdi) [![DOI](https://zenodo.org/badge/153943607.svg)](https://zenodo.org/badge/latestdoi/153943607) [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/openpdi)](https://pypi.org/project/openpdi/)
 
 OpenPDI is an unofficial effort to document and standardize data submitted to
 the [Police Data Initiative][3] (PDI). The goal is to make the data more accessible
