@@ -398,5 +398,129 @@
                 "index": 21
             }
         }
+    },
+    {
+        "url": "https://github.com/OpenPDI/data/releases/download/APD-TX/uof-16.csv",
+        "description": "R2R_2016",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 2,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 3,
+                "specifier": "%H%M"
+            },
+            "address": {
+                "index": 4
+            },
+            "city": {
+                "raw": "Austin"
+            },
+            "state": {
+                "raw": "TX"
+            },
+            "district": {
+                "index": 28
+            },
+            "service_type": {
+                "index": 6
+            },
+            "force_type": {
+                "index": 14
+            },
+            "reason": {
+                "index": 7
+            },
+            "officer_injuries": {
+                "index": 22
+            },
+            "hire_date": {
+                "index": 24,
+                "specifier": "%m/%d/%Y"
+            },
+            "experience": {
+                "index": 25
+            },
+            "subject_sex": {
+                "index": 10
+            },
+            "subject_race": {
+                "index": 11
+            },
+            "aggravating_factors": {
+                "index": 13
+            },
+            "resistance_type": {
+                "index": 14
+            },
+            "subject_injuries": {
+                "index": 21
+            }
+        }
+    },
+    {
+        "url": "https://github.com/OpenPDI/data/releases/download/APD-TX/uof-17.csv",
+        "description": "R2R_2017",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 2,
+                "specifier": "%m/%d/%Y"
+            },
+            "time": {
+                "index": 3,
+                "specifier": "%H%M"
+            },
+            "address": {
+                "index": 4
+            },
+            "city": {
+                "raw": "Austin"
+            },
+            "state": {
+                "raw": "TX"
+            },
+            "district": {
+                "index": 28
+            },
+            "service_type": {
+                "index": 6
+            },
+            "force_type": {
+                "index": 14
+            },
+            "reason": {
+                "index": 7
+            },
+            "officer_injuries": {
+                "index": 22
+            },
+            "hire_date": {
+                "index": 24,
+                "specifier": "%m/%d/%Y"
+            },
+            "experience": {
+                "index": 25
+            },
+            "subject_sex": {
+                "index": 10
+            },
+            "subject_race": {
+                "index": 11
+            },
+            "aggravating_factors": {
+                "index": 13
+            },
+            "resistance_type": {
+                "index": 14
+            },
+            "subject_injuries": {
+                "index": 21
+            }
+        }
     }
 ]

@@ -1,0 +1,134 @@
+[
+    {
+        "url": "https://github.com/OpenPDI/data/releases/download/BPD-WI/uof-17.csv",
+        "description": "",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 4,
+                "specifier": "%m/%d/%y"
+            },
+            "city": {
+                "raw": "Beloit"
+            },
+            "state": {
+                "raw": "WI"
+            },
+            "service_type": {
+                "index": 2
+            },
+            "subject_sex": {
+                "index": 5
+            },
+            "subject_race": {
+                "index": 6
+            },
+            "subject_age": {
+                "index": 7
+            },
+            "charge": {
+                "index": 8
+            }
+        }
+    },
+    {
+        "url": "https://github.com/OpenPDI/data/releases/download/BPD-WI/uof-18.csv",
+        "description": "",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 4,
+                "specifier": "%m/%d/%y"
+            },
+            "city": {
+                "raw": "Beloit"
+            },
+            "state": {
+                "raw": "WI"
+            },
+            "service_type": {
+                "index": 2
+            },
+            "subject_sex": {
+                "index": 5
+            },
+            "subject_race": {
+                "index": 6
+            },
+            "subject_age": {
+                "index": 7
+            },
+            "charge": {
+                "index": 8
+            }
+        }
+    },
+    {
+        "url": "https://github.com/OpenPDI/data/releases/download/BPD-WI/uof-19.csv",
+        "description": "",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 4,
+                "specifier": "%m/%d/%y"
+            },
+            "city": {
+                "raw": "Beloit"
+            },
+            "state": {
+                "raw": "WI"
+            },
+            "service_type": {
+                "index": 2
+            },
+            "subject_sex": {
+                "index": 5
+            },
+            "subject_race": {
+                "index": 6
+            },
+            "subject_age": {
+                "index": 7
+            },
+            "charge": {
+                "index": 8
+            }
+        }
+    },
+    {
+        "url": "https://github.com/OpenPDI/data/releases/download/BPD-WI/uof-20.csv",
+        "description": "",
+        "type": "csv",
+        "start": 1,
+        "columns": {
+            "date": {
+                "index": 4,
+                "specifier": "%m/%d/%y"
+            },
+            "city": {
+                "raw": "Beloit"
+            },
+            "state": {
+                "raw": "WI"
+            },
+            "service_type": {
+                "index": 2
+            },
+            "subject_sex": {
+                "index": 5
+            },
+            "subject_race": {
+                "index": 6
+            },
+            "subject_age": {
+                "index": 7
+            },
+            "charge": {
+                "index": 8
+            }
+        }
+    }
+]
