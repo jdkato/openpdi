@@ -83,7 +83,7 @@ def ethnicity(row, index):
     """
     """
     value = _read_value(row[index]).lower().strip(".")
-    if value in ("nh", "non-hisp", "non - hisp"):
+    if value in ("nh", "non-hisp", "non - hisp", "n"):
         return "NON-HISPANIC"
     return "HISPANIC"
 
@@ -92,10 +92,16 @@ def ethnicity(row, index):
 def race(row, index):
     """Determine the race given by the specified column.
     """
-    value = _read_value(row[index]).upper()
+    value = _read_value(row[index]).upper().strip()
     for standarized, variations in RACES.items():
         if value in variations:
             return standarized
+
+    if value in ("H", "HISPANIC/LATINO"):
+        value = "HISPANIC"
+    elif value == "L":
+        value = "LATINO"
+
     return "OTHER - {0}".format(value)
 
 
