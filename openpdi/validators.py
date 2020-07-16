@@ -5,6 +5,8 @@ import datetime
 import us
 import xlrd
 
+from .data import RACES
+
 
 VALIDATORS = {}
 
@@ -89,19 +91,12 @@ def ethnicity(row, index):
 @VALIDATOR
 def race(row, index):
     """Determine the race given by the specified column.
-
-    TODO: Do this better ...
     """
     value = _read_value(row[index]).upper()
-    if len(value) > 2:
-        return value
-    elif value == "W":
-        return "WHITE"
-    elif value == "B":
-        return "BLACK"
-    elif value == "H":
-        return "HISPANIC"
-    return None
+    for standarized, variations in RACES.items():
+        if value in variations:
+            return standarized
+    return "OTHER - {0}".format(value)
 
 
 @VALIDATOR
