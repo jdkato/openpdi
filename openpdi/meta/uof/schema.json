@@ -22,7 +22,7 @@
         {
             "label": "address",
             "format": "upper",
-            "description": "The street address of the incident (upper-cased).",
+            "description": "The street address of the incident (uppercased).",
             "example": "1511 FARO DR"
         },
         {
@@ -83,7 +83,7 @@
             "label": "officer_sex",
             "format": "sex",
             "description": "The sex of the involved officer.",
-            "example": "MALE or FEMALE"
+            "example": "MALE|FEMALE"
         },
         {
             "label": "officer_race",
@@ -107,13 +107,13 @@
             "label": "officer_injured",
             "format": "boolean",
             "description": "A boolean value indicating if the involved officer was injured.",
-            "example": "TRUE or FALSE"
+            "example": "TRUE|FALSE"
         },
         {
             "label": "officer_hospitalized",
             "format": "boolean",
             "description": "A boolean value indicating if the involved officer was hospitalized.",
-            "example": "TRUE or FALSE"
+            "example": "TRUE|FALSE"
         },
         {
             "label": "hire_date",
@@ -131,7 +131,7 @@
             "label": "subject_sex",
             "format": "sex",
             "description": "The sex of the involved subject.",
-            "example": "MALE or FEMALE"
+            "example": "MALE|FEMALE"
         },
         {
             "label": "subject_dob",
@@ -149,7 +149,7 @@
             "label": "subject_ethnicity",
             "format": "ethnicity",
             "description": "The ethnicity of the involved subject.",
-            "example": "HISPANIC OR NON-HISP"
+            "example": "HISPANIC|NON-HISP"
         },
         {
             "label": "aggravating_factors",
@@ -167,19 +167,19 @@
             "label": "subject_injured",
             "format": "boolean",
             "description": "A boolean value indicating if the involved subject was injured.",
-            "example": "TRUE or FALSE"
+            "example": "TRUE|FALSE"
         },
         {
             "label": "subject_armed",
             "format": "boolean",
             "description": "A boolean value indicating if the involved subject was armed.",
-            "example": "TRUE or FALSE"
+            "example": "TRUE|FALSE"
         },
         {
             "label": "subject_hospitalized",
             "format": "boolean",
             "description": "A boolean value indicating if the involved subject was hospitalized.",
-            "example": "TRUE or FALSE"
+            "example": "TRUE|FALSE"
         },
         {
             "label": "subject_age",
@@ -197,7 +197,7 @@
             "label": "arrested",
             "format": "boolean",
             "description": "A boolean value indicating if the involved subject was arrested.",
-            "example": "TRUE or FALSE"
+            "example": "TRUE|FALSE"
         },
         {
             "label": "charge",
@@ -205,50 +205,47 @@
             "description": "A description of the charges assigned to the involved subject.",
             "example": "POS/MARIJ, POSSESSION (COCAINE)"
         },
-
-        {
-            "label": "subject_build",
-            "format": "upper"
-        },
-        {
-            "label": "subject_height",
-            "format": "upper"
-        },
         {
             "label": "officer_id",
-            "format": "upper"
+            "format": "upper",
+            "description": "A description of the charges assigned to the involved subject.",
+            "example": "A unique identification number assigned to individual officers."
         },
         {
             "label": "disposition",
-            "format": "upper"
-        },
-        {
-            "label": "officer_hash",
-            "format": "upper"
+            "format": "upper",
+            "description": "The final outcome of any arrests or prosecutions related to the event.",
+            "example": "No Misconduct"
         },
         {
             "label": "case_number",
-            "format": "upper"
-        },
-        {
-            "label": "ra",
-            "format": "number"
+            "format": "upper",
+            "description": "A unique identification number assigned to the particular incident.",
+            "example": "15-00315"
         },
         {
             "label": "beat",
-            "format": "number"
+            "format": "number",
+            "description": "An integer representing the officer's patrol territory and time.",
+            "example": "346"
         },
         {
             "label": "sector",
-            "format": "number"
+            "format": "number",
+            "description": "An integer representing the sector (or \"neighborhood\") of the incident.",
+            "example": "340"
         },
         {
             "label": "division",
-            "format": "upper"
+            "format": "upper",
+            "description": "The division (or \"station\") that the incident occured in.",
+            "example": "SOUTHEAST"
         },
         {
             "label": "district",
-            "format": "upper"
+            "format": "upper",
+            "description": "The district that the incident occured in.",
+            "example": "D7"
         }
     ]
 }

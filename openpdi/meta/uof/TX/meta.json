@@ -28,9 +28,6 @@
             "longitude": {
                 "index": 38
             },
-            "ra": {
-                "index": 31
-            },
             "beat": {
                 "index": 32
             },
@@ -110,9 +107,6 @@
             },
             "state": {
                 "raw": "TX"
-            },
-            "ra": {
-                "index": 26
             },
             "beat": {
                 "index": 27
@@ -194,9 +188,6 @@
             "state": {
                 "raw": "TX"
             },
-            "ra": {
-                "index": 26
-            },
             "beat": {
                 "index": 27
             },
@@ -277,9 +268,7 @@
             "state": {
                 "raw": "TX"
             },
-            "ra": {
-                "index": 30
-            },
+
             "beat": {
                 "index": 31
             },

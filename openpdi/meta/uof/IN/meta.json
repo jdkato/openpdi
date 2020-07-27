@@ -78,7 +78,7 @@
             "officer_hospitalized": {
                 "index": 16
             },
-            "officer_hash": {
+            "officer_id": {
                 "index": 25
             },
             "officer_injuries": {
