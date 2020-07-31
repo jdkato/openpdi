@@ -202,8 +202,8 @@
         {
             "label": "officer_id",
             "format": "upper",
-            "description": "A description of the charges assigned to the involved subject.",
-            "example": "A unique identification number assigned to individual officers."
+            "description": "A unique identification number assigned to individual officers.",
+            "example": "443"
         },
         {
             "label": "disposition",
