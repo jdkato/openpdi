@@ -8,12 +8,6 @@
             "example": "2015-12-31"
         },
         {
-            "label": "year",
-            "format": "raw",
-            "description": "The year of the incident in YYYY format.",
-            "example": "2015"
-        },
-        {
             "label": "time",
             "format": "time",
             "description": "The 24-hour time of the incident, in HH:MM format.",
