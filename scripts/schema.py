@@ -23,7 +23,7 @@ if __name__ == "__main__":
         rows.append([
             "`{0}`".format(col["label"]),
             col["description"],
-            "`{0}`".format(col["example"]),
+            "`{0}`".format(col["example"].replace("|", "/")),
             ", ".join([link.format(f) for f in set(agencies)])
         ])
 
