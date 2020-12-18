@@ -8,8 +8,7 @@ standardization&mdash;namely,
 - **File types**: While some agencies make use if the
   [Socrata Open Data API](https://dev.socrata.com/), many provide their data
   in raw `.csv`, `.xlsx`, or `.xls` files of varying structures.
-- **Column names**: Many columns that represent the same data (e.g., the race
-  police officer) are named differently across departments, cities, and states.
+- **Column names**: Many columns that represent the same data (e.g., `race`) are named differently across departments, cities, and states.
 - **Value formats**: Dates, times, and other comparable fields are submitted in
   many different formats.
 - **Column availability**: It's currently very difficult to identify data
